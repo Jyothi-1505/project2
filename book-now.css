@@ -1,0 +1,1034 @@
+/* =========================================
+   BOOK NOW PAGE
+========================================= */
+
+.book-page-main {
+    min-height: calc(100vh - 76px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2.5rem 1rem;
+
+    background: var(--color-surface-secondary);
+}
+
+
+/* =========================================================
+   BOOK NOW HEADER - FINAL LTR / RTL FIX
+========================================================= */
+
+/* Remove global header spacing */
+body {
+    margin: 0 !important;
+    padding-top: 0 !important;
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.book-page-header {
+    position: sticky !important;
+    top: 0 !important;
+    left: 0 !important;
+
+    width: 100% !important;
+    height: 64px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    z-index: 99999 !important;
+
+    background: var(--color-surface);
+
+    border-bottom: 1px solid var(--color-border);
+
+    backdrop-filter: blur(12px);
+}
+
+
+/* =========================================================
+   HEADER INNER
+========================================================= */
+
+.book-header-inner {
+    width: 100% !important;
+    max-width: none !important;
+
+    height: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 16px !important;
+
+    display: flex !important;
+
+    /* IMPORTANT */
+    flex-direction: row !important;
+    direction: ltr !important;
+
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LTR
+   LOGO = LEFT
+   CONTROLS = RIGHT
+========================================================= */
+
+.book-header-inner .brand-logo {
+    order: 1 !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    flex-shrink: 0 !important;
+
+    gap: 6px;
+}
+
+
+.book-header-actions {
+    order: 2 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    gap: 6px;
+
+    flex-shrink: 0 !important;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.book-header-inner .brand-logo-image {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.book-header-inner .brand-logo-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+.book-header-inner .brand-logo-text-wrapper {
+    display: inline-flex !important;
+    align-items: center;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   HEADER BUTTONS
+========================================================= */
+
+.book-header-actions .header-control-button {
+    width: 34px !important;
+    height: 34px !important;
+
+    min-width: 34px !important;
+    min-height: 34px !important;
+
+    display: inline-flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: 1px solid var(--color-border);
+
+    border-radius: 50%;
+
+    background: var(--color-surface);
+
+    color: var(--color-secondary);
+
+    font-family: inherit;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.book-header-actions .header-control-button svg {
+    width: 15px;
+    height: 15px;
+}
+
+
+/* =========================================================
+   RTL
+   CONTROLS = LEFT
+   LOGO = RIGHT
+
+   DO NOT USE row-reverse.
+   Only swap order.
+========================================================= */
+
+html[dir="rtl"] .book-header-inner {
+    direction: ltr !important;
+    flex-direction: row !important;
+}
+
+
+/* Controls move to LEFT */
+html[dir="rtl"] .book-header-actions {
+    order: 1 !important;
+
+    justify-content: flex-start !important;
+}
+
+
+/* Logo moves to RIGHT */
+html[dir="rtl"] .book-header-inner .brand-logo {
+    order: 2 !important;
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .book-page-header {
+        height: 60px !important;
+    }
+
+    .book-header-inner {
+        padding: 0 14px !important;
+    }
+
+    .book-header-inner .brand-logo-image {
+        width: 34px;
+        height: 34px;
+    }
+
+    .book-header-actions {
+        gap: 5px;
+    }
+
+    .book-header-actions .header-control-button {
+        width: 32px !important;
+        height: 32px !important;
+
+        min-width: 32px !important;
+        min-height: 32px !important;
+    }
+}
+
+
+/* =========================================================
+   360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .book-page-header {
+        height: 58px !important;
+    }
+
+    .book-header-inner {
+        padding: 0 10px !important;
+    }
+
+    .book-header-inner .brand-logo {
+        gap: 5px;
+    }
+
+    .book-header-inner .brand-logo-image {
+        width: 30px;
+        height: 30px;
+    }
+
+    .book-header-actions {
+        gap: 4px;
+    }
+
+    .book-header-actions .header-control-button {
+        width: 30px !important;
+        height: 30px !important;
+
+        min-width: 30px !important;
+        min-height: 30px !important;
+    }
+
+    .book-header-actions .header-control-button svg {
+        width: 13px;
+        height: 13px;
+    }
+
+    #rtl-toggle {
+        font-size: 8px;
+    }
+}
+
+/* =========================================
+   FORM CARD
+========================================= */
+
+.book-form-card {
+    width: 100%;
+    max-width: 850px;
+
+    padding: 2.5rem;
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-large);
+
+    background: var(--color-surface);
+
+    box-shadow: var(--shadow-medium);
+}
+
+
+/* =========================================
+   FORM HEADING
+========================================= */
+
+.book-form-heading {
+    max-width: 600px;
+
+    margin: 0 auto 2rem;
+
+    text-align: center;
+}
+
+.book-form-eyebrow {
+    display: inline-flex;
+    align-items: center;
+
+    gap: .4rem;
+
+    margin-bottom: .7rem;
+
+    color: var(--color-primary);
+
+    font-size: .58rem;
+    font-weight: 600;
+
+    letter-spacing: .08em;
+
+    text-transform: uppercase;
+}
+
+.book-form-eyebrow svg {
+    width: 14px;
+    height: 14px;
+}
+
+.book-form-heading h1 {
+    margin: 0 0 .6rem;
+
+    color: var(--color-heading);
+
+    font-size: clamp(2rem, 4vw, 2.8rem);
+
+    font-weight: 500;
+
+    line-height: 1.1;
+
+    letter-spacing: -.03em;
+}
+
+.book-form-heading h1 span {
+    color: var(--color-primary);
+}
+
+.book-form-heading p {
+    max-width: 500px;
+
+    margin: 0 auto;
+
+    color: var(--color-text);
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.book-enquiry-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+}
+
+.book-form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 1rem;
+}
+
+.book-form-group {
+    display: flex;
+    flex-direction: column;
+
+    gap: .4rem;
+}
+
+.book-form-group label {
+    color: var(--color-heading);
+
+    font-size: .62rem;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   INPUT WRAPPER
+========================================= */
+
+.book-input-wrapper {
+    position: relative;
+
+    width: 100%;
+}
+
+.book-input-wrapper > svg {
+    position: absolute;
+
+    top: 50%;
+    left: .9rem;
+
+    width: 15px;
+    height: 15px;
+
+    color: var(--color-secondary);
+
+    transform: translateY(-50%);
+
+    pointer-events: none;
+}
+
+.book-input-wrapper input,
+.book-input-wrapper select,
+.book-input-wrapper textarea {
+    width: 100%;
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+
+    outline: none;
+
+    background: var(--color-background);
+
+    color: var(--color-heading);
+
+    font-family: inherit;
+
+    font-size: .65rem;
+
+    transition:
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+.book-input-wrapper input,
+.book-input-wrapper select {
+    height: 45px;
+
+    padding: 0 1rem 0 2.4rem;
+}
+
+.book-input-wrapper textarea {
+    min-height: 115px;
+
+    padding: .8rem 1rem .8rem 2.4rem;
+
+    resize: vertical;
+}
+
+.book-input-wrapper select {
+    appearance: none;
+
+    cursor: pointer;
+}
+
+.book-input-wrapper input::placeholder,
+.book-input-wrapper textarea::placeholder {
+    color: var(--color-text);
+
+    opacity: .6;
+}
+
+.book-input-wrapper input:hover,
+.book-input-wrapper select:hover,
+.book-input-wrapper textarea:hover {
+    border-color: var(--color-primary);
+}
+
+.book-input-wrapper input:focus,
+.book-input-wrapper select:focus,
+.book-input-wrapper textarea:focus {
+    border-color: var(--color-primary);
+
+    box-shadow:
+        0 0 0 3px rgba(180, 83, 9, .1);
+}
+
+
+/* =========================================
+   TEXTAREA ICON
+========================================= */
+
+.book-textarea-wrapper > svg {
+    top: 1rem;
+
+    transform: none;
+}
+
+
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
+
+.book-submit-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: .5rem;
+
+    width: 100%;
+    height: 46px;
+
+    margin-top: .3rem;
+
+    border: 1px solid var(--color-primary);
+
+    border-radius: var(--radius-medium);
+
+    background: var(--color-primary);
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: .68rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background .25s ease,
+        border-color .25s ease,
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.book-submit-button svg {
+    width: 15px;
+    height: 15px;
+
+    transition: transform .25s ease;
+}
+
+.book-submit-button:hover {
+    background: var(--color-primary-dark);
+
+    border-color: var(--color-primary-dark);
+
+    transform: translateY(-2px);
+
+    box-shadow: var(--shadow-small);
+}
+
+.book-submit-button:hover svg {
+    transform: translateX(3px);
+}
+
+
+/* =========================================
+   FORM NOTE
+========================================= */
+
+.book-form-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: .35rem;
+
+    color: var(--color-text);
+
+    font-size: .52rem;
+
+    text-align: center;
+}
+
+.book-form-note svg {
+    width: 12px;
+    height: 12px;
+
+    flex-shrink: 0;
+
+    color: var(--color-primary);
+}
+
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+.dark-mode .book-page-header {
+    background: var(--color-surface);
+}
+
+.dark-mode .book-form-card {
+    background: var(--color-surface);
+}
+
+.dark-mode .book-input-wrapper input,
+.dark-mode .book-input-wrapper select,
+.dark-mode .book-input-wrapper textarea {
+    background: var(--color-background);
+}
+
+/* responsiveness */
+
+/* @media (max-width: 768px) {
+
+    .book-page-main {
+        align-items: flex-start;
+
+        padding: 1.5rem .8rem;
+    }
+
+    .book-form-card {
+        padding: 1.5rem 1.2rem;
+    }
+
+    .book-form-heading {
+        margin-bottom: 1.5rem;
+    }
+
+    .book-form-heading h1 {
+        font-size: 2rem;
+    }
+
+    .book-form-heading p {
+        font-size: 16px;
+    }
+
+    .book-form-row {
+        grid-template-columns: 1fr;
+
+        gap: 1rem;
+    }
+
+    .book-brand-logo span {
+        display: none;
+    }
+
+    .book-header-button {
+        padding-inline: .7rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .book-page-header {
+        height: 68px;
+    }
+
+    .book-header-inner {
+        width: calc(100% - 1.2rem);
+    }
+
+    .book-brand-logo img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .book-page-main {
+        min-height: calc(100vh - 68px);
+    }
+
+    .book-form-card {
+        padding: 1.3rem 1rem;
+    }
+
+    .book-form-heading h1 {
+        font-size: 1.8rem;
+    }
+
+} */
+
+/* =========================================================
+   BOOK NOW - FINAL HEADER & ALIGNMENT FIX
+========================================================= */
+
+/* Remove global responsiveness spacing */
+body {
+    margin: 0 !important;
+    padding-top: 0 !important;
+    overflow-x: hidden;
+}
+
+/* Header */
+.book-page-header {
+    position: sticky !important;
+    top: 0 !important;
+    left: 0 !important;
+
+    width: 100%;
+    height: 76px;
+
+    margin: 0;
+    padding: 0;
+
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+
+    backdrop-filter: blur(12px);
+}
+
+/* Header inner */
+.book-header-inner {
+    width: min(1100px, calc(100% - 2rem));
+    height: 100%;
+
+    margin: 0 auto;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 1rem;
+}
+
+/* Actual logo classes used in HTML */
+.book-header-inner .brand-logo {
+    display: inline-flex;
+    align-items: center;
+
+    gap: .6rem;
+
+    margin: 0;
+    padding: 0;
+
+    flex-shrink: 0;
+
+    text-decoration: none;
+}
+
+/* Logo image */
+.book-header-inner .brand-logo-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+}
+
+.book-header-inner .brand-logo-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    display: block;
+}
+
+/* Logo text */
+.book-header-inner .brand-logo-text-wrapper {
+    display: inline-flex;
+    align-items: center;
+
+    white-space: nowrap;
+}
+
+/* Header actions */
+.book-header-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: .5rem;
+
+    margin: 0;
+    padding: 0;
+
+    flex-shrink: 0;
+}
+
+/* Actual button class used in HTML */
+.book-header-actions .header-control-button {
+    width: 36px;
+    height: 36px;
+
+    min-width: 36px;
+    min-height: 36px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+
+    background: var(--color-surface);
+
+    color: var(--color-secondary);
+
+    font-family: inherit;
+    font-size: .65rem;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+/* Icons */
+.book-header-actions .header-control-button svg {
+    width: 15px;
+    height: 15px;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.book-page-main {
+    width: 100%;
+    min-height: calc(100vh - 76px);
+
+    margin: 0;
+    padding: 2rem 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   FORM CARD
+========================================================= */
+
+.book-form-card {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    body {
+        margin: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    .book-page-header {
+        height: 64px;
+    }
+
+    .book-header-inner {
+        width: calc(100% - 2rem);
+    }
+
+    .book-header-inner .brand-logo-image {
+        width: 36px;
+        height: 36px;
+    }
+
+    .book-header-actions {
+        gap: .4rem;
+    }
+
+    .book-header-actions .header-control-button {
+        width: 34px;
+        height: 34px;
+
+        min-width: 34px;
+        min-height: 34px;
+    }
+
+    .book-page-main {
+        min-height: calc(100vh - 64px);
+
+        padding: 1.25rem .8rem;
+    }
+
+    .book-form-card {
+        max-width: 650px;
+        padding: 1.5rem 1.25rem;
+    }
+
+    .book-form-heading {
+        margin-bottom: 1.5rem;
+    }
+
+    .book-form-heading h1 {
+        font-size: 2rem;
+    }
+
+    .book-form-row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* =========================================================
+   360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    body {
+        margin: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    .book-page-header {
+        height: 58px;
+    }
+
+    .book-header-inner {
+        width: calc(100% - 1rem);
+    }
+
+    .book-header-inner .brand-logo {
+        gap: .35rem;
+    }
+
+    .book-header-inner .brand-logo-image {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Hide text if it makes header crowded */
+    .book-header-inner .brand-logo-text-wrapper {
+        display: none;
+    }
+
+    .book-header-actions {
+        gap: .3rem;
+    }
+
+    .book-header-actions .header-control-button {
+        width: 30px;
+        height: 30px;
+
+        min-width: 30px;
+        min-height: 30px;
+    }
+
+    .book-header-actions .header-control-button svg {
+        width: 13px;
+        height: 13px;
+    }
+
+    #rtl-toggle {
+        font-size: 8px;
+    }
+
+    .book-page-main {
+        min-height: calc(100vh - 58px);
+
+        padding: .8rem .6rem;
+    }
+
+    .book-form-card {
+        width: 100%;
+        padding: 1.25rem .9rem;
+
+        border-radius: 14px;
+    }
+
+    .book-form-heading {
+        margin-bottom: 1.2rem;
+    }
+
+    .book-form-heading h1 {
+        font-size: 1.75rem;
+        line-height: 1.15;
+    }
+
+    .book-form-heading p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .book-form-row {
+        grid-template-columns: 1fr;
+        gap: .8rem;
+    }
+
+    .book-enquiry-form {
+        gap: .8rem;
+    }
+
+    .book-input-wrapper input,
+    .book-input-wrapper select {
+        height: 43px;
+    }
+
+    .book-input-wrapper textarea {
+        min-height: 105px;
+    }
+}

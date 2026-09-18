@@ -1,0 +1,2121 @@
+.bulk-hero{
+position:relative;
+width:100%;
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+overflow:hidden;
+background-image:url("./assets/images/bulk-orders/bulk-hero.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+}
+.bulk-hero__overlay{
+position:absolute;
+inset:0;
+background:rgba(255,247,237,.72);
+z-index:1;
+}
+.bulk-hero__inner{
+position:relative;
+z-index:2;
+width:100%;
+max-width:1200px;
+margin:0 auto;
+padding:var(--space-7) var(--space-5);
+display:flex;
+align-items:center;
+justify-content:center;
+min-height:100vh;
+text-align:center;
+}
+.bulk-hero__content{
+max-width:850px;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+.bulk-hero .section-eyebrow{
+display:inline-block;
+margin-bottom:16px;
+color:var(--color-primary);
+font-size:13px;
+font-weight:700;
+letter-spacing:.12em;
+}
+.bulk-hero h1{
+max-width:800px;
+margin:0 auto 20px;
+color:var(--color-secondary);
+font-size:clamp(42px,6vw,72px);
+font-weight:700;
+line-height:1.08;
+letter-spacing:-.03em;
+}
+.bulk-hero p{
+max-width:700px;
+margin:0 auto 30px;
+color:var(--color-text);
+font-size:18px;
+line-height:1.7;
+}
+.bulk-hero__actions{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:12px;
+}
+.bulk-hero .primary-button,
+.bulk-hero .outline-action-button{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:9px;
+min-height:48px;
+padding:0 22px;
+border-radius:999px;
+font-size:14px;
+font-weight:600;
+text-decoration:none;
+transition:all .25s ease;
+}
+.bulk-hero .primary-button{
+border:1px solid var(--color-primary);
+background:var(--color-primary);
+color:#fff;
+}
+.bulk-hero .primary-button:hover{
+border-color:var(--color-secondary);
+background:var(--color-secondary);
+color:#fff;
+}
+.bulk-hero .outline-action-button{
+border:1px solid var(--color-primary);
+background:transparent;
+color:var(--color-primary);
+}
+.bulk-hero .outline-action-button:hover{
+background:var(--color-primary);
+color:#fff;
+}
+.bulk-hero__actions svg{
+width:17px;
+height:17px;
+transition:transform .25s ease;
+}
+.bulk-hero .primary-button:hover svg{
+transform:translateX(3px);
+}
+.bulk-hero .outline-action-button:hover svg{
+transform:translateY(3px);
+}
+
+.bulk-process{
+padding:85px 0;
+background:#FFF9E9;
+border-top:1px solid var(--color-border);
+border-bottom:1px solid var(--color-border);
+}
+.bulk-process__heading{
+max-width:700px;
+margin:0 auto 50px;
+text-align:center;
+}
+.bulk-process__heading .section-eyebrow{
+display:block;
+margin-bottom:10px;
+color:var(--color-primary);
+font-size:12px;
+font-weight:700;
+letter-spacing:.12em;
+}
+.bulk-process__heading h2{
+margin:0 0 12px;
+color:var(--color-secondary);
+font-size:clamp(30px,4vw,44px);
+font-weight:500;
+line-height:1.15;
+}
+.bulk-process__heading p{
+margin:0;
+color:var(--color-text);
+font-size:15px;
+line-height:1.7;
+}
+.bulk-process__steps{
+display:grid;
+grid-template-columns:1fr 50px 1fr 50px 1fr 50px 1fr;
+align-items:start;
+}
+.bulk-process__step{
+text-align:center;
+}
+.bulk-process__number{
+margin-bottom:12px;
+color:var(--color-primary);
+font-size:12px;
+font-weight:700;
+letter-spacing:.08em;
+}
+.bulk-process__icon{
+width:58px;
+height:58px;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:0 auto 18px;
+border:1px solid var(--color-primary);
+border-radius:50%;
+background:#fff;
+color:var(--color-primary);
+}
+.bulk-process__icon svg{
+width:23px;
+height:23px;
+}
+.bulk-process__step h3{
+margin:0 0 9px;
+color:var(--color-secondary);
+font-size:18px;
+font-weight:500;
+line-height:1.3;
+}
+.bulk-process__step p{
+max-width:230px;
+margin:0 auto;
+color:var(--color-text);
+font-size:12px;
+line-height:1.65;
+}
+.bulk-process__line{
+height:1px;
+margin-top:98px;
+background:var(--color-primary);
+opacity:.35;
+}
+
+.bulk-solutions{
+padding:90px 0;
+background:#fff;
+}
+.bulk-solutions__layout{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:70px;
+align-items:center;
+}
+.bulk-solutions__image{
+height:600px;
+overflow:hidden;
+border-radius:22px;
+}
+.bulk-solutions__image img{
+width:100%;
+height:100%;
+display:block;
+object-fit:cover;
+}
+.bulk-solutions__content{
+max-width:580px;
+}
+.bulk-solutions__content .section-eyebrow{
+display:block;
+margin-bottom:10px;
+color:var(--color-primary);
+font-size:12px;
+font-weight:700;
+letter-spacing:.12em;
+}
+.bulk-solutions__content h2{
+margin:0 0 14px;
+color:var(--color-secondary);
+font-size:clamp(32px,4vw,46px);
+font-weight:500;
+line-height:1.15;
+}
+.bulk-solutions__content>p{
+max-width:520px;
+margin:0 0 30px;
+color:var(--color-text);
+font-size:14px;
+line-height:1.75;
+}
+.bulk-solutions__list{
+border-top:1px solid var(--color-border);
+}
+.bulk-solution{
+display:grid;
+grid-template-columns:48px 1fr;
+gap:17px;
+padding:20px 0;
+border-bottom:1px solid var(--color-border);
+}
+.bulk-solution__icon{
+width:42px;
+height:42px;
+display:flex;
+align-items:center;
+justify-content:center;
+border:1px solid var(--color-primary);
+border-radius:50%;
+color:var(--color-primary);
+}
+.bulk-solution__icon svg{
+width:19px;
+height:19px;
+}
+.bulk-solution h3{
+margin:0 0 4px;
+color:var(--color-secondary);
+font-size:17px;
+font-weight:500;
+line-height:1.3;
+}
+.bulk-solution p{
+margin:0;
+color:var(--color-text);
+font-size:12px;
+line-height:1.55;
+}
+
+.bulk-cta{
+padding:90px 0;
+background:#FFF9E9;
+border-top:1px solid var(--color-border);
+}
+.bulk-cta__inner{
+display:grid;
+grid-template-columns:1.2fr .8fr;
+min-height:420px;
+overflow:hidden;
+border-radius:22px;
+background:#fff;
+border:1px solid var(--color-border);
+}
+.bulk-cta__content{
+display:flex;
+flex-direction:column;
+align-items:flex-start;
+justify-content:center;
+padding:55px;
+}
+.bulk-cta__content .section-eyebrow{
+display:block;
+margin-bottom:12px;
+color:var(--color-primary);
+font-size:12px;
+font-weight:700;
+letter-spacing:.12em;
+}
+.bulk-cta__content h2{
+max-width:600px;
+margin:0 0 15px;
+color:var(--color-secondary);
+font-size:clamp(32px,4vw,46px);
+font-weight:500;
+line-height:1.15;
+}
+.bulk-cta__content>p{
+max-width:590px;
+margin:0 0 20px;
+color:var(--color-text);
+font-size:14px;
+line-height:1.7;
+}
+.bulk-cta__points{
+display:flex;
+flex-wrap:wrap;
+gap:10px 20px;
+margin-bottom:27px;
+}
+.bulk-cta__points span{
+display:inline-flex;
+align-items:center;
+gap:6px;
+color:var(--color-secondary);
+font-size:12px;
+font-weight:500;
+}
+.bulk-cta__points svg{
+width:15px;
+height:15px;
+color:var(--color-primary);
+}
+.bulk-cta__button{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:9px;
+min-height:48px;
+padding:0 22px;
+border:1px solid var(--color-primary);
+border-radius:999px;
+background:var(--color-primary);
+color:#fff;
+font-size:14px;
+font-weight:600;
+text-decoration:none;
+transition:all .25s ease;
+}
+.bulk-cta__button:hover{
+border-color:var(--color-secondary);
+background:var(--color-secondary);
+color:#fff;
+}
+.bulk-cta__button svg{
+width:17px;
+height:17px;
+transition:transform .25s ease;
+}
+.bulk-cta__button:hover svg{
+transform:translate(3px,-3px);
+}
+.bulk-cta__visual{
+display:flex;
+align-items:center;
+justify-content:center;
+padding:40px;
+background:var(--color-secondary);
+}
+.bulk-cta__visual-inner{
+width:230px;
+height:230px;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+border:1px solid rgba(255,255,255,.35);
+border-radius:50%;
+color:#fff;
+}
+.bulk-cta__visual-inner svg{
+width:38px;
+height:38px;
+margin-bottom:15px;
+}
+.bulk-cta__visual-inner span{
+margin-bottom:8px;
+font-size:10px;
+font-weight:700;
+letter-spacing:.15em;
+}
+.bulk-cta__visual-inner strong{
+font-size:23px;
+font-weight:500;
+line-height:1.2;
+}
+
+/* =========================================
+   BULK ORDER BENEFITS
+========================================= */
+
+.bulk-benefits {
+    padding: 90px 0;
+    background: #FFF9E9;
+
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.bulk-benefits__heading {
+    max-width: 680px;
+
+    margin: 0 auto 50px;
+
+    text-align: center;
+}
+
+.bulk-benefits__heading .section-eyebrow {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: var(--color-primary);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: .12em;
+}
+
+.bulk-benefits__heading h2 {
+    margin: 0 0 14px;
+
+    color: var(--color-secondary);
+
+    font-size: clamp(32px, 4vw, 46px);
+
+    font-weight: 500;
+
+    line-height: 1.15;
+}
+
+.bulk-benefits__heading p {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    color: var(--color-text);
+
+    font-size: 14px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================
+   BENEFIT GRID
+========================================= */
+
+.bulk-benefits__grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 0;
+
+    border-top: 1px solid var(--color-border);
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+.bulk-benefit {
+    position: relative;
+
+    padding: 35px 28px;
+
+    border-right: 1px solid var(--color-border);
+
+    background: #fff;
+
+    transition:
+        background-color .25s ease,
+        transform .25s ease;
+}
+
+.bulk-benefit:last-child {
+    border-right: 0;
+}
+
+.bulk-benefit:hover {
+    background: #fffaf3;
+
+    transform: translateY(-4px);
+}
+
+.bulk-benefit__icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    border: 1px solid var(--color-primary);
+
+    border-radius: 50%;
+
+    color: var(--color-primary);
+}
+
+.bulk-benefit__icon svg {
+    width: 21px;
+    height: 21px;
+}
+
+.bulk-benefit__number {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--color-primary);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: .12em;
+}
+
+.bulk-benefit h3 {
+    margin: 0 0 9px;
+
+    color: var(--color-secondary);
+
+    font-size: 18px;
+
+    font-weight: 500;
+
+    line-height: 1.3;
+}
+
+.bulk-benefit p {
+    margin: 0;
+
+    color: var(--color-text);
+
+    font-size: 12px;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================
+   BULK FAQ
+========================================= */
+
+.bulk-faq {
+    padding: 90px 0;
+
+    background: #fff;
+}
+
+.bulk-faq__layout {
+    display: grid;
+
+    grid-template-columns: .8fr 1.2fr;
+
+    gap: 80px;
+
+    align-items: start;
+}
+
+.bulk-faq__intro {
+    max-width: 450px;
+}
+
+.bulk-faq__intro .section-eyebrow {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: var(--color-primary);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: .12em;
+}
+
+.bulk-faq__intro h2 {
+    margin: 0 0 15px;
+
+    color: var(--color-secondary);
+
+    font-size: clamp(32px, 4vw, 46px);
+
+    font-weight: 500;
+
+    line-height: 1.15;
+}
+
+.bulk-faq__intro p {
+    margin: 0 0 25px;
+
+    color: var(--color-text);
+
+    font-size: 14px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================
+   FAQ BUTTON
+========================================= */
+
+.bulk-faq__button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    min-height: 46px;
+
+    padding: 0 20px;
+
+    border: 1px solid var(--color-primary);
+
+    border-radius: 999px;
+
+    background: var(--color-primary);
+
+    color: #fff;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: all .25s ease;
+}
+
+.bulk-faq__button:hover {
+    background: var(--color-secondary);
+
+    border-color: var(--color-secondary);
+
+    color: #fff;
+}
+
+.bulk-faq__button svg {
+    width: 16px;
+    height: 16px;
+
+    transition: transform .25s ease;
+}
+
+.bulk-faq__button:hover svg {
+    transform: translate(3px, -3px);
+}
+
+
+/* =========================================
+   FAQ LIST
+========================================= */
+
+.bulk-faq__list {
+    border-top: 1px solid var(--color-border);
+}
+
+.bulk-faq__item {
+    border-bottom: 1px solid var(--color-border);
+}
+
+.bulk-faq__item summary {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 21px 0;
+
+    cursor: pointer;
+
+    list-style: none;
+
+    color: var(--color-secondary);
+
+    font-size: 16px;
+
+    font-weight: 500;
+}
+
+.bulk-faq__item summary::-webkit-details-marker {
+    display: none;
+}
+
+.bulk-faq__item summary svg {
+    width: 18px;
+    height: 18px;
+
+    flex-shrink: 0;
+
+    color: var(--color-primary);
+
+    transition: transform .25s ease;
+}
+
+.bulk-faq__item[open] summary svg {
+    transform: rotate(45deg);
+}
+
+.bulk-faq__answer {
+    padding: 0 35px 20px 0;
+}
+
+.bulk-faq__answer p {
+    max-width: 650px;
+
+    margin: 0;
+
+    color: var(--color-text);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   BULK ORDERS - DARK MODE
+   ========================================================= */
+
+html[data-theme="dark"] .bulk-hero {
+    background-color: #1c120d;
+}
+
+html[data-theme="dark"] .bulk-hero__overlay {
+    background: rgba(20, 10, 5, 0.72);
+}
+
+html[data-theme="dark"] .bulk-hero h1 {
+    color: #f5e7d8;
+}
+
+html[data-theme="dark"] .bulk-hero p {
+    color: #d6c5b7;
+}
+
+html[data-theme="dark"] .bulk-hero .section-eyebrow {
+    color: var(--color-primary-light);
+}
+
+
+/* =========================================================
+   BULK PROCESS
+   ========================================================= */
+
+html[data-theme="dark"] .bulk-process {
+    background: #1b120d;
+    border-color: rgba(255,255,255,.10);
+}
+
+html[data-theme="dark"] .bulk-process__heading h2 {
+    color: #f5e7d8;
+}
+
+html[data-theme="dark"] .bulk-process__heading p {
+    color: #cdbeb3;
+}
+
+html[data-theme="dark"] .bulk-process__step h3 {
+    color: #f1dfd0;
+}
+
+html[data-theme="dark"] .bulk-process__step p {
+    color: #bcaea5;
+}
+
+html[data-theme="dark"] .bulk-process__icon {
+    background: #241710;
+    border-color: var(--color-primary-light);
+    color: var(--color-primary-light);
+}
+
+html[data-theme="dark"] .bulk-process__line {
+    background: var(--color-primary-light);
+}
+
+
+/* =========================================================
+   BULK SOLUTIONS
+   ========================================================= */
+
+html[data-theme="dark"] .bulk-solutions {
+    background: #120d0a;
+}
+
+html[data-theme="dark"] .bulk-solutions__content h2 {
+    color: #f5e7d8;
+}
+
+html[data-theme="dark"] .bulk-solutions__content > p {
+    color: #cdbeb3;
+}
+
+html[data-theme="dark"] .bulk-solutions__list {
+    border-color: rgba(255,255,255,.10);
+}
+
+html[data-theme="dark"] .bulk-solution {
+    border-color: rgba(255,255,255,.10);
+}
+
+html[data-theme="dark"] .bulk-solution h3 {
+    color: #f1dfd0;
+}
+
+html[data-theme="dark"] .bulk-solution p {
+    color: #bcaea5;
+}
+
+html[data-theme="dark"] .bulk-solution__icon {
+    border-color: var(--color-primary-light);
+    color: var(--color-primary-light);
+}
+
+
+/* =========================================================
+   BULK BENEFITS
+   ========================================================= */
+
+html[data-theme="dark"] .bulk-benefits {
+    background: #1b120d;
+    border-color: rgba(255,255,255,.10);
+}
+
+html[data-theme="dark"] .bulk-benefits__heading h2 {
+    color: #f5e7d8;
+}
+
+html[data-theme="dark"] .bulk-benefits__heading p {
+    color: #cdbeb3;
+}
+
+html[data-theme="dark"] .bulk-benefits__grid {
+    border-color: rgba(255,255,255,.10);
+}
+
+html[data-theme="dark"] .bulk-benefit {
+    background: #241710;
+    border-color: rgba(255,255,255,.10);
+}
+
+html[data-theme="dark"] .bulk-benefit:hover {
+    background: #2d1c13;
+}
+
+html[data-theme="dark"] .bulk-benefit h3 {
+    color: #f1dfd0;
+}
+
+html[data-theme="dark"] .bulk-benefit p {
+    color: #bcaea5;
+}
+
+html[data-theme="dark"] .bulk-benefit__icon {
+    border-color: var(--color-primary-light);
+    color: var(--color-primary-light);
+}
+
+
+/* =========================================================
+   BULK FAQ
+   ========================================================= */
+
+html[data-theme="dark"] .bulk-faq {
+    background: #120d0a;
+}
+
+html[data-theme="dark"] .bulk-faq__intro h2 {
+    color: #f5e7d8;
+}
+
+html[data-theme="dark"] .bulk-faq__intro p {
+    color: #cdbeb3;
+}
+
+html[data-theme="dark"] .bulk-faq__list {
+    border-color: rgba(255,255,255,.10);
+}
+
+html[data-theme="dark"] .bulk-faq__item {
+    border-color: rgba(255,255,255,.10);
+}
+
+html[data-theme="dark"] .bulk-faq__item summary {
+    color: #f1dfd0;
+}
+
+html[data-theme="dark"] .bulk-faq__answer p {
+    color: #bcaea5;
+}
+
+
+/* =========================================================
+   BULK CTA
+   ========================================================= */
+
+html[data-theme="dark"] .bulk-cta {
+    background: #1b120d;
+    border-color: rgba(255,255,255,.10);
+}
+
+html[data-theme="dark"] .bulk-cta__inner {
+    background: #241710;
+    border-color: rgba(255,255,255,.10);
+}
+
+html[data-theme="dark"] .bulk-cta__content h2 {
+    color: #f5e7d8;
+}
+
+html[data-theme="dark"] .bulk-cta__content > p {
+    color: #cdbeb3;
+}
+
+html[data-theme="dark"] .bulk-cta__points span {
+    color: #ead8ca;
+}
+
+html[data-theme="dark"] .bulk-cta__visual {
+    background: #6B2300;
+}
+
+
+/* =========================================================
+   DARK MODE - GENERAL BULK TEXT
+   ========================================================= */
+
+html[data-theme="dark"] .bulk-hero,
+html[data-theme="dark"] .bulk-process,
+html[data-theme="dark"] .bulk-solutions,
+html[data-theme="dark"] .bulk-benefits,
+html[data-theme="dark"] .bulk-faq,
+html[data-theme="dark"] .bulk-cta {
+    color-scheme: dark;
+}
+
+/* responsiveness */
+/* 
+@media (max-width:991px){
+.bulk-hero{
+min-height:calc(100vh - var(--header-height));
+}
+.bulk-hero__inner{
+min-height:calc(100vh - var(--header-height));
+padding:var(--space-6) var(--space-4);
+}
+.bulk-hero h1{
+font-size:clamp(38px,7vw,60px);
+}
+}
+@media (max-width:600px){
+.bulk-hero{
+min-height:calc(100vh - var(--header-height));
+}
+.bulk-hero__inner{
+min-height:calc(100vh - var(--header-height));
+padding:40px 20px;
+}
+.bulk-hero__content{
+max-width:100%;
+}
+.bulk-hero h1{
+font-size:clamp(36px,11vw,48px);
+line-height:1.12;
+}
+.bulk-hero p{
+font-size:16px;
+line-height:1.6;
+}
+.bulk-hero__actions{
+width:100%;
+align-items:stretch;
+flex-direction:column;
+}
+.bulk-hero .primary-button,
+.bulk-hero .outline-action-button{
+width:100%;
+}
+}
+
+@media (max-width:991px){
+.bulk-process{
+padding:70px 0;
+}
+.bulk-process__steps{
+grid-template-columns:1fr 1fr;
+gap:45px 30px;
+}
+.bulk-process__line{
+display:none;
+}
+}
+@media (max-width:600px){
+.bulk-process{
+padding:60px 0;
+}
+.bulk-process__heading{
+margin-bottom:35px;
+}
+.bulk-process__heading h2{
+font-size:31px;
+}
+.bulk-process__steps{
+grid-template-columns:1fr;
+gap:32px;
+}
+.bulk-process__step p{
+max-width:320px;
+}
+}
+
+@media (max-width:991px){
+.bulk-solutions{
+padding:70px 0;
+}
+.bulk-solutions__layout{
+grid-template-columns:1fr;
+gap:45px;
+}
+.bulk-solutions__image{
+height:420px;
+}
+.bulk-solutions__content{
+max-width:none;
+}
+}
+@media (max-width:600px){
+.bulk-solutions{
+padding:60px 0;
+}
+.bulk-solutions__layout{
+gap:35px;
+}
+.bulk-solutions__image{
+height:300px;
+border-radius:17px;
+}
+.bulk-solutions__content h2{
+font-size:31px;
+}
+.bulk-solution{
+grid-template-columns:42px 1fr;
+gap:13px;
+padding:17px 0;
+}
+.bulk-solution__icon{
+width:38px;
+height:38px;
+}
+.bulk-solution__icon svg{
+width:17px;
+height:17px;
+}
+}
+
+@media (max-width:991px){
+.bulk-cta{
+padding:70px 0;
+}
+.bulk-cta__inner{
+grid-template-columns:1fr;
+}
+.bulk-cta__content{
+padding:45px;
+}
+.bulk-cta__visual{
+min-height:300px;
+}
+}
+@media (max-width:600px){
+.bulk-cta{
+padding:60px 0;
+}
+.bulk-cta__inner{
+border-radius:17px;
+}
+.bulk-cta__content{
+padding:35px 24px;
+}
+.bulk-cta__content h2{
+font-size:31px;
+}
+.bulk-cta__points{
+flex-direction:column;
+gap:9px;
+}
+.bulk-cta__button{
+width:100%;
+}
+.bulk-cta__visual{
+min-height:260px;
+padding:30px;
+}
+.bulk-cta__visual-inner{
+width:190px;
+height:190px;
+}
+.bulk-cta__visual-inner strong{
+font-size:20px;
+}
+}
+
+@media (max-width: 991px) {
+
+    .bulk-benefits {
+        padding: 70px 0;
+    }
+
+    .bulk-benefits__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bulk-benefit:nth-child(2) {
+        border-right: 0;
+    }
+
+    .bulk-benefit:nth-child(-n+2) {
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .bulk-faq {
+        padding: 70px 0;
+    }
+
+    .bulk-faq__layout {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .bulk-faq__intro {
+        max-width: 650px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .bulk-benefits {
+        padding: 60px 0;
+    }
+
+    .bulk-benefits__heading {
+        margin-bottom: 35px;
+    }
+
+    .bulk-benefits__heading h2 {
+        font-size: 31px;
+    }
+
+    .bulk-benefits__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bulk-benefit {
+        padding: 28px 22px;
+
+        border-right: 0;
+
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .bulk-benefit:last-child {
+        border-bottom: 0;
+    }
+
+    .bulk-faq {
+        padding: 60px 0;
+    }
+
+    .bulk-faq__layout {
+        gap: 35px;
+    }
+
+    .bulk-faq__intro h2 {
+        font-size: 31px;
+    }
+
+    .bulk-faq__item summary {
+        padding: 18px 0;
+
+        font-size: 14px;
+    }
+
+    .bulk-faq__answer {
+        padding-right: 20px;
+    }
+
+} */
+
+/* =========================================================
+   BULK ORDERS PAGE RESPONSIVENESS
+   1024px / 768px / 360px
+========================================================= */
+
+
+/* =========================================================
+   1024px - NEST HUB
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    /* ---------- HERO ---------- */
+
+    .bulk-hero {
+        min-height: calc(100vh - var(--header-height));
+        background-position: center;
+    }
+
+    .bulk-hero__inner {
+        min-height: calc(100vh - var(--header-height));
+        padding: 5rem 3rem;
+    }
+
+    .bulk-hero__content {
+        max-width: 720px;
+    }
+
+    .bulk-hero h1 {
+        max-width: 700px;
+        font-size: clamp(42px, 6vw, 60px);
+    }
+
+    .bulk-hero p {
+        max-width: 620px;
+        font-size: 17px;
+    }
+
+
+    /* ---------- PROCESS ---------- */
+
+    .bulk-process {
+        padding: 70px 0;
+    }
+
+    .bulk-process__heading {
+        margin-bottom: 40px;
+    }
+
+    .bulk-process__steps {
+        grid-template-columns: 1fr 35px 1fr 35px 1fr 35px 1fr;
+        gap: 0;
+    }
+
+    .bulk-process__step h3 {
+        font-size: 16px;
+    }
+
+    .bulk-process__step p {
+        max-width: 190px;
+        font-size: 11px;
+    }
+
+    .bulk-process__line {
+        margin-top: 96px;
+    }
+
+
+    /* ---------- SOLUTIONS ---------- */
+
+    .bulk-solutions {
+        padding: 75px 0;
+    }
+
+    .bulk-solutions__layout {
+        grid-template-columns: 1fr 1fr;
+        gap: 45px;
+    }
+
+    .bulk-solutions__image {
+        height: 500px;
+    }
+
+    .bulk-solutions__content h2 {
+        font-size: 38px;
+    }
+
+    .bulk-solution {
+        grid-template-columns: 42px 1fr;
+        gap: 14px;
+        padding: 18px 0;
+    }
+
+
+    /* ---------- BENEFITS ---------- */
+
+    .bulk-benefits {
+        padding: 70px 0;
+    }
+
+    .bulk-benefits__heading {
+        margin-bottom: 40px;
+    }
+
+    .bulk-benefits__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bulk-benefit {
+        padding: 30px 24px;
+        border-right: 1px solid var(--color-border);
+    }
+
+    .bulk-benefit:nth-child(2),
+    .bulk-benefit:nth-child(4) {
+        border-right: 0;
+    }
+
+    .bulk-benefit:nth-child(-n+2) {
+        border-bottom: 1px solid var(--color-border);
+    }
+
+
+    /* ---------- FAQ ---------- */
+
+    .bulk-faq {
+        padding: 70px 0;
+    }
+
+    .bulk-faq__layout {
+        grid-template-columns: .9fr 1.1fr;
+        gap: 50px;
+    }
+
+    .bulk-faq__intro h2 {
+        font-size: 38px;
+    }
+
+    .bulk-faq__item summary {
+        font-size: 15px;
+    }
+
+
+    /* ---------- CTA ---------- */
+
+    .bulk-cta {
+        padding: 70px 0;
+    }
+
+    .bulk-cta__inner {
+        grid-template-columns: 1.1fr .9fr;
+        min-height: 380px;
+    }
+
+    .bulk-cta__content {
+        padding: 40px;
+    }
+
+    .bulk-cta__content h2 {
+        font-size: 38px;
+    }
+
+    .bulk-cta__visual {
+        padding: 30px;
+    }
+
+    .bulk-cta__visual-inner {
+        width: 210px;
+        height: 210px;
+    }
+
+
+    /* ---------- OVERFLOW ---------- */
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .bulk-hero,
+    .bulk-process,
+    .bulk-solutions,
+    .bulk-benefits,
+    .bulk-faq,
+    .bulk-cta {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .bulk-process__step,
+    .bulk-solution,
+    .bulk-benefit,
+    .bulk-cta__content {
+        min-width: 0;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+
+/* =========================================================
+   768px - IPAD MINI
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* ---------- HERO ---------- */
+
+    .bulk-hero {
+        min-height: calc(100svh - var(--header-height));
+        background-position: center;
+    }
+
+    .bulk-hero__inner {
+        min-height: calc(100svh - var(--header-height));
+        padding: 4rem 2rem;
+    }
+
+    .bulk-hero__content {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .bulk-hero h1 {
+        max-width: 600px;
+        font-size: clamp(38px, 7vw, 52px);
+        line-height: 1.08;
+    }
+
+    .bulk-hero p {
+        max-width: 520px;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .bulk-hero__actions {
+        flex-wrap: wrap;
+    }
+
+    .bulk-hero .primary-button,
+    .bulk-hero .outline-action-button {
+        min-height: 46px;
+        padding: 0 20px;
+    }
+
+
+    /* ---------- PROCESS ---------- */
+
+    .bulk-process {
+        padding: 55px 0;
+    }
+
+    .bulk-process__heading {
+        max-width: 600px;
+        margin-bottom: 35px;
+    }
+
+    .bulk-process__heading h2 {
+        font-size: 32px;
+    }
+
+    .bulk-process__heading p {
+        font-size: 14px;
+    }
+
+    .bulk-process__steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 35px 25px;
+    }
+
+    .bulk-process__line {
+        display: none;
+    }
+
+    .bulk-process__step h3 {
+        font-size: 17px;
+    }
+
+    .bulk-process__step p {
+        max-width: 250px;
+        font-size: 12px;
+    }
+
+
+    /* ---------- SOLUTIONS ---------- */
+
+    .bulk-solutions {
+        padding: 60px 0;
+    }
+
+    .bulk-solutions__layout {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .bulk-solutions__image {
+        width: 100%;
+        height: 380px;
+        border-radius: 18px;
+    }
+
+    .bulk-solutions__content {
+        max-width: 100%;
+    }
+
+    .bulk-solutions__content h2 {
+        font-size: 32px;
+    }
+
+    .bulk-solutions__content > p {
+        max-width: 600px;
+        font-size: 13px;
+    }
+
+    .bulk-solution {
+        grid-template-columns: 42px 1fr;
+        gap: 14px;
+        padding: 18px 0;
+    }
+
+    .bulk-solution h3 {
+        font-size: 17px;
+    }
+
+
+    /* ---------- BENEFITS ---------- */
+
+    .bulk-benefits {
+        padding: 60px 0;
+    }
+
+    .bulk-benefits__heading {
+        max-width: 600px;
+        margin-bottom: 35px;
+    }
+
+    .bulk-benefits__heading h2 {
+        font-size: 32px;
+    }
+
+    .bulk-benefits__heading p {
+        font-size: 13px;
+    }
+
+    .bulk-benefits__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .bulk-benefit {
+        padding: 28px 22px;
+    }
+
+    .bulk-benefit h3 {
+        font-size: 17px;
+    }
+
+    .bulk-benefit p {
+        font-size: 12px;
+    }
+
+
+    /* ---------- FAQ ---------- */
+
+    .bulk-faq {
+        padding: 60px 0;
+    }
+
+    .bulk-faq__layout {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .bulk-faq__intro {
+        max-width: 600px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .bulk-faq__intro h2 {
+        font-size: 32px;
+    }
+
+    .bulk-faq__intro p {
+        font-size: 13px;
+    }
+
+    .bulk-faq__button {
+        margin: 0 auto;
+    }
+
+    .bulk-faq__item summary {
+        gap: 15px;
+        padding: 19px 0;
+        font-size: 14px;
+    }
+
+    .bulk-faq__answer {
+        padding: 0 25px 18px 0;
+    }
+
+    .bulk-faq__answer p {
+        font-size: 12px;
+    }
+
+
+    /* ---------- CTA ---------- */
+
+    .bulk-cta {
+        padding: 60px 0;
+    }
+
+    .bulk-cta__inner {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        border-radius: 18px;
+    }
+
+    .bulk-cta__content {
+        align-items: center;
+        text-align: center;
+        padding: 40px 30px;
+    }
+
+    .bulk-cta__content h2 {
+        max-width: 550px;
+        font-size: 32px;
+    }
+
+    .bulk-cta__content > p {
+        max-width: 550px;
+        font-size: 13px;
+    }
+
+    .bulk-cta__points {
+        justify-content: center;
+    }
+
+    .bulk-cta__button {
+        min-height: 46px;
+    }
+
+    .bulk-cta__visual {
+        min-height: 280px;
+        padding: 30px;
+    }
+
+    .bulk-cta__visual-inner {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    /* ---------- GENERAL ---------- */
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    main,
+    section,
+    footer,
+    header {
+        max-width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+
+/* =========================================================
+   360px - SAMSUNG GALAXY S8+
+========================================================= */
+
+@media (max-width: 360px) {
+
+    /* ---------- HERO ---------- */
+
+    .bulk-hero {
+        min-height: calc(100svh - var(--header-height));
+        background-position: center;
+    }
+
+    .bulk-hero__inner {
+        min-height: calc(100svh - var(--header-height));
+        padding: 3rem 1rem;
+    }
+
+    .bulk-hero__content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .bulk-hero .section-eyebrow {
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+
+    .bulk-hero h1 {
+        max-width: 100%;
+        margin-bottom: 16px;
+        font-size: 34px;
+        line-height: 1.08;
+    }
+
+    .bulk-hero p {
+        max-width: 100%;
+        margin-bottom: 22px;
+        font-size: 15px;
+        line-height: 1.55;
+    }
+
+    .bulk-hero__actions {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .bulk-hero .primary-button,
+    .bulk-hero .outline-action-button {
+        width: 100%;
+        min-height: 44px;
+        padding: 0 14px;
+        font-size: 12px;
+    }
+
+
+    /* ---------- PROCESS ---------- */
+
+    .bulk-process {
+        padding: 45px 0;
+    }
+
+    .bulk-process__heading {
+        margin-bottom: 30px;
+        padding: 0 12px;
+    }
+
+    .bulk-process__heading h2 {
+        font-size: 27px;
+        line-height: 1.2;
+    }
+
+    .bulk-process__heading p {
+        font-size: 13px;
+        line-height: 1.55;
+    }
+
+    .bulk-process__steps {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .bulk-process__step {
+        width: 100%;
+        padding: 0 12px;
+    }
+
+    .bulk-process__number {
+        margin-bottom: 9px;
+        font-size: 11px;
+    }
+
+    .bulk-process__icon {
+        width: 52px;
+        height: 52px;
+        margin-bottom: 14px;
+    }
+
+    .bulk-process__icon svg {
+        width: 21px;
+        height: 21px;
+    }
+
+    .bulk-process__step h3 {
+        font-size: 17px;
+    }
+
+    .bulk-process__step p {
+        max-width: 280px;
+        font-size: 12px;
+        line-height: 1.55;
+    }
+
+
+    /* ---------- SOLUTIONS ---------- */
+
+    .bulk-solutions {
+        padding: 45px 0;
+    }
+
+    .bulk-solutions__layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .bulk-solutions__image {
+        width: 100%;
+        height: 270px;
+        border-radius: 15px;
+    }
+
+    .bulk-solutions__content h2 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .bulk-solutions__content > p {
+        max-width: 100%;
+        margin-bottom: 22px;
+        font-size: 13px;
+        line-height: 1.55;
+    }
+
+    .bulk-solution {
+        grid-template-columns: 38px 1fr;
+        gap: 11px;
+        padding: 16px 0;
+    }
+
+    .bulk-solution__icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .bulk-solution__icon svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .bulk-solution h3 {
+        font-size: 16px;
+    }
+
+    .bulk-solution p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+
+    /* ---------- BENEFITS ---------- */
+
+    .bulk-benefits {
+        padding: 45px 0;
+    }
+
+    .bulk-benefits__heading {
+        margin-bottom: 30px;
+        padding: 0 12px;
+    }
+
+    .bulk-benefits__heading h2 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .bulk-benefits__heading p {
+        font-size: 13px;
+        line-height: 1.55;
+    }
+
+    .bulk-benefits__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bulk-benefit {
+        padding: 25px 20px;
+        border-right: 0;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .bulk-benefit:nth-child(2),
+    .bulk-benefit:nth-child(4) {
+        border-right: 0;
+    }
+
+    .bulk-benefit:nth-child(-n+2) {
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .bulk-benefit:last-child {
+        border-bottom: 0;
+    }
+
+    .bulk-benefit__icon {
+        width: 44px;
+        height: 44px;
+        margin-bottom: 15px;
+    }
+
+    .bulk-benefit__icon svg {
+        width: 19px;
+        height: 19px;
+    }
+
+    .bulk-benefit__number {
+        font-size: 9px;
+    }
+
+    .bulk-benefit h3 {
+        font-size: 17px;
+    }
+
+    .bulk-benefit p {
+        font-size: 12px;
+        line-height: 1.55;
+    }
+
+
+    /* ---------- FAQ ---------- */
+
+    .bulk-faq {
+        padding: 45px 0;
+    }
+
+    .bulk-faq__layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .bulk-faq__intro {
+        max-width: 100%;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .bulk-faq__intro h2 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .bulk-faq__intro p {
+        font-size: 13px;
+        line-height: 1.55;
+    }
+
+    .bulk-faq__button {
+        width: 100%;
+        min-height: 43px;
+        font-size: 12px;
+    }
+
+    .bulk-faq__item summary {
+        gap: 10px;
+        padding: 17px 0;
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .bulk-faq__item summary svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .bulk-faq__answer {
+        padding: 0 10px 17px 0;
+    }
+
+    .bulk-faq__answer p {
+        font-size: 12px;
+        line-height: 1.55;
+    }
+
+
+    /* ---------- CTA ---------- */
+
+    .bulk-cta {
+        padding: 40px 0;
+    }
+
+    .bulk-cta__inner {
+        width: 100%;
+        grid-template-columns: 1fr;
+        border-radius: 15px;
+    }
+
+    .bulk-cta__content {
+        align-items: center;
+        text-align: center;
+        padding: 32px 18px;
+    }
+
+    .bulk-cta__content .section-eyebrow {
+        margin-bottom: 9px;
+        font-size: 10px;
+    }
+
+    .bulk-cta__content h2 {
+        max-width: 100%;
+        margin-bottom: 12px;
+        font-size: 27px;
+        line-height: 1.2;
+    }
+
+    .bulk-cta__content > p {
+        max-width: 100%;
+        margin-bottom: 18px;
+        font-size: 13px;
+        line-height: 1.55;
+    }
+
+    .bulk-cta__points {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 22px;
+    }
+
+    .bulk-cta__points span {
+        font-size: 11px;
+    }
+
+    .bulk-cta__button {
+        width: 100%;
+        min-height: 43px;
+        padding: 0 14px;
+        font-size: 12px;
+    }
+
+    .bulk-cta__visual {
+        min-height: 230px;
+        padding: 25px;
+    }
+
+    .bulk-cta__visual-inner {
+        width: 175px;
+        height: 175px;
+    }
+
+    .bulk-cta__visual-inner svg {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .bulk-cta__visual-inner span {
+        font-size: 9px;
+    }
+
+    .bulk-cta__visual-inner strong {
+        font-size: 18px;
+    }
+
+
+    /* ---------- OVERFLOW SAFETY ---------- */
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    main,
+    section,
+    footer,
+    header {
+        max-width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .bulk-hero__content,
+    .bulk-process__step,
+    .bulk-solutions__content,
+    .bulk-benefit,
+    .bulk-faq__intro,
+    .bulk-faq__list,
+    .bulk-cta__content {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+    }
+}

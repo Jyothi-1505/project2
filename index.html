@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Bakers Corner - Quality baking essentials, ingredients, decorating supplies and baking equipment for every baker.">
+<meta name="theme-color" content="#B45309">
+<title>Bakers Corner | For Every Baker in You</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/common.css">
+<link rel="stylesheet" href="assets/css/responsiveness.css">
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+<header class="site-header" id="site-header">
+<div class="container">
+<div class="header-wrapper">
+<a class="brand-logo" href="index.html" aria-label="Bakers Corner Home">
+    <div class="brand-logo-image">
+    <img src="assets/images/logo4.png" alt="Bakers Corner logo"></div>
+    <div class="brand-logo-text-wrapper">
+    <span class="brand-logo-bakers">Bakers</span><span class="brand-logo-corner">Corner</span>
+    </div>
+</a>
+<nav class="main-navigation"
+     id="main-navigation"
+     aria-label="Main navigation">
+
+    <ul class="navigation-list">
+
+        <!-- HOME -->
+        <li class="navigation-item navigation-item--dropdown">
+
+            <button
+                class="navigation-link navigation-dropdown-toggle active"
+                id="home-dropdown-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="home-dropdown">
+
+                <span>Home</span>
+
+                <i data-lucide="chevron-down"></i>
+
+            </button>
+
+            <ul class="home-dropdown" id="home-dropdown">
+
+                <li>
+                    <a class="dropdown-link active" href="index.html">
+
+                        <span class="dropdown-link-name">
+                            Home 1
+                        </span>
+
+                        <span>
+                            Classic
+                        </span>
+
+                    </a>
+                </li>
+
+                <li>
+                    <a class="dropdown-link" href="home2.html">
+
+                        <span class="dropdown-link-name">
+                            Home 2
+                        </span>
+
+                        <span>
+                            Premium
+                        </span>
+
+                    </a>
+                </li>
+
+            </ul>
+
+        </li>
+
+
+        <!-- PRODUCTS -->
+        <li class="navigation-item">
+
+            <a
+                class="navigation-link"
+                href="products.html">
+
+                Products
+
+            </a>
+
+        </li>
+
+
+        <!-- RECIPES -->
+        <li class="navigation-item">
+
+            <a
+                class="navigation-link"
+                href="recipes-tips.html">
+
+                Recipes &amp; Tips
+
+            </a>
+
+        </li>
+
+
+        <!-- BULK ORDERS -->
+        <li class="navigation-item">
+
+            <a
+                class="navigation-link"
+                href="bulk-orders.html">
+
+                Bulk Orders
+
+            </a>
+
+        </li>
+
+
+        <!-- CONTACT -->
+        <li class="navigation-item">
+
+            <a
+                class="navigation-link"
+                href="contact.html">
+
+                Contact
+
+            </a>
+
+        </li>
+
+
+        <!-- BOOK NOW - MOBILE MENU -->
+        <li class="navigation-item mobile-book-now-item">
+
+            <a class="header-cta-button" href="book-now.html">Book Now</a>
+
+        </li>
+
+    </ul>
+
+</nav>
+<div class="header-actions">
+ <button class="header-control-button" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Dark mode">
+<i data-lucide="moon-star"></i>
+</button>
+<button class="header-control-button" id="rtl-toggle" type="button" aria-label="Switch to RTL layout" title="RTL">RTL</button>
+<a class="header-cta-button" href="book-now.html">Book Now</a>
+</div>
+<button class="mobile-menu-toggle" id="mobile-menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-navigation">
+<i data-lucide="menu"></i>
+</button>
+</div>
+</div>
+</header>
+<main class="home-page">
+<section class="hero-section" id="home-hero">
+<div class="container">
+<div class="hero-content">
+<div class="hero-text reveal">
+<span class="hero-eyebrow"><i data-lucide="sparkles"></i> Bake something beautiful</span>
+<h1 class="hero-title">Everything You Need to <span>Bake With Love.</span></h1>
+<p class="hero-description">Discover quality baking essentials, trusted ingredients, and creative tools made for every baker — from your first recipe to your next masterpiece.</p>
+<div class="hero-actions">
+<a class="primary-button" href="products.html">Explore Products <i data-lucide="arrow-right"></i></a>
+<a href="recipes.html" class="outline-action-button">
+<span>Explore Recipes</span>
+<i data-lucide="arrow-up-right"></i>
+</a>
+</div>
+<div class="hero-highlights">
+<div class="hero-highlight">
+<span class="hero-highlight-icon"><i data-lucide="badge-check"></i></span>
+<div>
+<strong>Quality Products</strong>
+<span>Made for better bakes</span>
+</div>
+</div>
+<div class="hero-highlight">
+<span class="hero-highlight-icon"><i data-lucide="heart"></i></span>
+<div>
+<strong>For Every Baker</strong>
+<span>Beginner to passionate</span>
+</div>
+</div>
+</div>
+</div>
+<div class="hero-visual reveal">
+<div class="hero-image-wrapper">
+<div class="hero-image-decoration hero-image-decoration--top"></div>
+<div class="hero-image-decoration hero-image-decoration--bottom"></div>
+<div class="hero-image-card">
+<img src="./assets/images/index/chocolate-cake.jpg" alt="Beautiful freshly baked chocolate cake">
+</div>
+<div class="hero-floating-card hero-floating-card--top">
+<span class="hero-floating-icon"><i data-lucide="award"></i></span>
+<div>
+<strong>Made for Bakers</strong>
+<span>Quality you can trust</span>
+</div>
+</div>
+<div class="hero-floating-card hero-floating-card--bottom">
+<span class="hero-floating-icon"><i data-lucide="cake"></i></span>
+<div>
+<strong>Sweet Moments</strong>
+<span>Start baking today</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="baking-essentials-section section" id="baking-essentials">
+<div class="container">
+<div class="section-heading reveal">
+<span class="section-eyebrow"><i data-lucide="grid-3x3"></i> Shop by category</span>
+<h2 class="section-title">Everything You Need to <span>Bake Better.</span></h2>
+<p class="section-description">From everyday baking essentials to tools that bring your sweetest ideas to life, find everything you need in one place.</p>
+</div>
+<div class="baking-category-grid">
+<a class="baking-category-card reveal" href="products.html#bakeware">
+<div class="baking-category-image">
+<img src="./assets/images/index/bakeware.jpg" alt="Bakeware and baking tools">
+<div class="baking-category-overlay"></div>
+<span class="baking-category-icon"><i data-lucide="package"></i></span>
+</div>
+<div class="baking-category-content">
+<div>
+<h3>Bakeware</h3>
+<p>Pans, trays &amp; essential tools</p>
+</div>
+<span class="baking-category-arrow"><i data-lucide="arrow-up-right"></i></span>
+</div>
+</a>
+<a class="baking-category-card reveal" href="products.html#ingredients">
+<div class="baking-category-image">
+<img src="./assets/images/index/ingredients.jpg" alt="Fresh baking ingredients">
+<div class="baking-category-overlay"></div>
+<span class="baking-category-icon"><i data-lucide="shopping-basket"></i></span>
+</div>
+<div class="baking-category-content">
+<div>
+<h3>Ingredients</h3>
+<p>Bake with Quality Essentials</p>
+</div>
+<span class="baking-category-arrow"><i data-lucide="arrow-up-right"></i></span>
+</div>
+</a>
+<a class="baking-category-card reveal" href="products.html#decorating">
+<div class="baking-category-image">
+<img src="./assets/images/index/decorating.jpg" alt="Cake decorating supplies">
+<div class="baking-category-overlay"></div>
+<span class="baking-category-icon"><i data-lucide="palette"></i></span>
+</div>
+<div class="baking-category-content">
+<div>
+<h3>Decorating</h3>
+<p>Tools to finish every creation</p>
+</div>
+<span class="baking-category-arrow"><i data-lucide="arrow-up-right"></i></span>
+</div>
+</a>
+<a class="baking-category-card reveal" href="products.html#ovens">
+<div class="baking-category-image">
+<img src="./assets/images/index/ovens.jpg" alt="Baking oven and equipment">
+<div class="baking-category-overlay"></div>
+<span class="baking-category-icon"><i data-lucide="flame"></i></span>
+</div>
+<div class="baking-category-content">
+<div>
+<h3>Ovens</h3>
+<p>Reliable heat for perfect bakes</p>
+</div>
+<span class="baking-category-arrow"><i data-lucide="arrow-up-right"></i></span>
+</div>
+</a>
+</div>
+<div class="section-action reveal">
+<a class="primary-button" href="products.html">View All Products <i data-lucide="arrow-right"></i></a>
+</div>
+</div>
+</section>
+<section class="featured-products-section section" id="featured-products">
+<div class="container">
+<div class="section-heading reveal">
+<span class="section-eyebrow"><i data-lucide="stars"></i> Featured for your kitchen</span>
+<h2 class="section-title">Tools That Make <span>Baking Better.</span></h2>
+<p class="section-description">Explore some of our favorite baking essentials, carefully selected to make every recipe easier, smoother, and more enjoyable.</p>
+</div>
+<div class="featured-products-grid">
+<article class="product-card reveal">
+<div class="product-card-image">
+<span class="product-badge">Bestseller</span>
+<button class="product-wishlist" type="button" aria-label="Add Mixing Bowl Set to wishlist">
+<i data-lucide="heart"></i>
+</button>
+<img src="./assets/images/index/mixing-bowls.jpg" alt="Professional stainless steel mixing bowls">
+<div class="product-card-overlay">
+<a class="product-quick-view" href="products.html">Quick View <i data-lucide="arrow-up-right"></i></a>
+</div>
+</div>
+<div class="product-card-content">
+<span class="product-category">Bakeware</span>
+<h3 class="product-name"><a href="products.html">Premium Mixing Bowl Set</a></h3>
+<div class="product-rating">
+<div class="product-stars" aria-label="5 out of 5 stars">
+<i data-lucide="star"></i>
+<i data-lucide="star"></i>
+<i data-lucide="star"></i>
+<i data-lucide="star"></i>
+<i data-lucide="star"></i>
+</div>
+<span>(48)</span>
+</div>
+<div class="product-card-bottom">
+<span class="product-price">₹1,299</span>
+<a class="product-add-button" href="products.html" aria-label="View Premium Mixing Bowl Set">
+<i data-lucide="arrow-right"></i>
+</a>
+</div>
+</div>
+</article>
+<article class="product-card reveal">
+<div class="product-card-image">
+<span class="product-badge product-badge--secondary">Popular</span>
+<button class="product-wishlist" type="button" aria-label="Add Baking Ingredients Kit to wishlist">
+<i data-lucide="heart"></i>
+</button>
+<img src="./assets/images/index/ingredients-kit.jpg" alt="Baking ingredients arranged on a kitchen counter">
+<div class="product-card-overlay">
+<a class="product-quick-view" href="products.html">Quick View <i data-lucide="arrow-up-right"></i></a>
+</div>
+</div>
+<div class="product-card-content">
+<span class="product-category">Ingredients</span>
+<h3 class="product-name"><a href="products.html">Everyday Baking Essentials Kit</a></h3>
+<div class="product-rating">
+<div class="product-stars" aria-label="5 out of 5 stars">
+<i data-lucide="star"></i>
+<i data-lucide="star"></i>
+<i data-lucide="star"></i>
+<i data-lucide="star"></i>
+<i data-lucide="star"></i>
+</div>
+<span>(36)</span>
+</div>
+<div class="product-card-bottom">
+<span class="product-price">₹499</span>
+<a class="product-add-button" href="products.html" aria-label="View Everyday Baking Essentials Kit">
+<i data-lucide="arrow-right"></i>
+</a>
+</div>
+</div>
+</article>
+<article class="product-card reveal">
+<div class="product-card-image">
+<span class="product-badge">New</span>
+<button class="product-wishlist" type="button" aria-label="Add Cake Decorating Set to wishlist">
+<i data-lucide="heart"></i>
+</button>
+<img src="./assets/images/index/decorating-tools.jpg" alt="Cake decorating tools and supplies">
+<div class="product-card-overlay">
+<a class="product-quick-view" href="products.html">Quick View <i data-lucide="arrow-up-right"></i></a>
+</div>
+</div>
+<div class="product-card-content">
+<span class="product-category">Decorating</span>
+<h3 class="product-name"><a href="products.html">Creative Cake Decorating Set</a></h3>
+<div class="product-rating">
+<div class="product-stars" aria-label="4 out of 5 stars">
+<i data-lucide="star"></i>
+<i data-lucide="star"></i>
+<i data-lucide="star"></i>
+<i data-lucide="star"></i>
+<i data-lucide="star"></i>
+</div>
+<span>(29)</span>
+</div>
+<div class="product-card-bottom">
+<span class="product-price">₹799</span>
+<a class="product-add-button" href="products.html" aria-label="View Creative Cake Decorating Set">
+<i data-lucide="arrow-right"></i>
+</a>
+</div>
+</div>
+</article>
+<article class="product-card reveal">
+<div class="product-card-image">
+<span class="product-badge product-badge--secondary">Featured</span>
+<button class="product-wishlist" type="button" aria-label="Add Countertop Baking Oven to wishlist">
+<i data-lucide="heart"></i>
+</button>
+<img src="./assets/images/index/countertop-oven.jpg" alt="Modern countertop baking oven">
+<div class="product-card-overlay">
+<a class="product-quick-view" href="products.html">Quick View <i data-lucide="arrow-up-right"></i></a>
+</div>
+</div>
+<div class="product-card-content">
+<span class="product-category">Ovens</span>
+<h3 class="product-name"><a href="products.html">Compact Baker's Countertop Oven</a></h3>
+<div class="product-rating">
+<div class="product-stars" aria-label="5 out of 5 stars">
+<i data-lucide="star"></i>
+<i data-lucide="star"></i>
+<i data-lucide="star"></i>
+<i data-lucide="star"></i>
+<i data-lucide="star"></i>
+</div>
+<span>(52)</span>
+</div>
+<div class="product-card-bottom">
+<span class="product-price">₹3,999</span>
+<a class="product-add-button" href="products.html" aria-label="View Compact Baker's Countertop Oven">
+<i data-lucide="arrow-right"></i>
+</a>
+</div>
+</div>
+</article>
+</div>
+<div class="section-action reveal">
+<a class="primary-button" href="products.html">Shop All Products <i data-lucide="arrow-right"></i></a>
+</div>
+</div>
+</section>
+<section class="bake-confidence-section section" id="bake-confidence">
+<div class="container">
+<div class="bake-confidence-content">
+<div class="bake-confidence-visual reveal">
+<div class="bake-confidence-image-wrapper">
+<div class="bake-confidence-image">
+<img src="./assets/images/index/baker-preparing-ingredients.jpg" alt="Baker preparing fresh ingredients in a kitchen">
+</div>
+<div class="bake-confidence-experience">
+<span class="bake-confidence-experience-icon"><i data-lucide="heart"></i></span>
+<div>
+<strong>Made for your kitchen</strong>
+<span>From our corner to yours</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bake-confidence-text reveal">
+<span class="section-eyebrow"><i data-lucide="heart"></i> Your baking journey</span>
+<h2 class="section-title">Bake With <span>Confidence.</span></h2>
+<p class="bake-confidence-description">Great baking starts with the right tools, quality ingredients, and a little inspiration. Bakers Corner brings them all together so you can spend less time searching and more time creating.</p>
+<div class="bake-confidence-features">
+<div class="bake-confidence-feature">
+<span class="bake-confidence-feature-icon"><i data-lucide="badge-check"></i></span>
+<div>
+<h3>Quality You Can Trust</h3>
+<p>Thoughtfully selected essentials for reliable results.</p>
+</div>
+</div>
+<div class="bake-confidence-feature">
+<span class="bake-confidence-feature-icon"><i data-lucide="book-open-text"></i></span>
+<div>
+<h3>Recipes &amp; Inspiration</h3>
+<p>Simple ideas and helpful tips to improve every bake.</p>
+</div>
+</div>
+<div class="bake-confidence-feature">
+<span class="bake-confidence-feature-icon"><i data-lucide="users"></i></span>
+<div>
+<h3>For Every Baker</h3>
+<p>From first-time bakers to experienced creators.</p>
+</div>
+</div>
+</div>
+<div class="bake-confidence-action">
+<a class="primary-button" href="recipes-tips.html">Discover Recipes &amp; Tips <i data-lucide="arrow-right"></i></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="baking-inspiration-section section" id="baking-inspiration">
+<div class="container">
+<div class="baking-inspiration-header reveal">
+<div>
+<span class="section-eyebrow"><i data-lucide="stars"></i> A little inspiration</span>
+<h2 class="section-title">Ideas Made for Your <span>Next Bake.</span></h2>
+</div>
+<span class="baking-inspiration-note">Recipes &amp; Tips</span>
+</div>
+<div class="baking-inspiration-layout">
+<div class="baking-inspiration-collage reveal">
+<div class="baking-small-image baking-small-image--top">
+<img src="./assets/images/index/artisan-bread.jpg" alt="Freshly baked artisan bread">
+</div>
+<div class="baking-main-image">
+<img src="./assets/images/index/classic-chocolate-cake.jpg" alt="Classic chocolate cake">
+<span class="baking-image-badge">Featured</span>
+</div>
+<div class="baking-small-image baking-small-image--bottom">
+<img src="./assets/images/index/decorated-cake.jpg" alt="Decorated cake">
+</div>
+</div>
+<div class="baking-inspiration-content reveal">
+<div class="baking-content-number">01</div>
+<span class="baking-content-label">Featured Recipe</span>
+<h3>Classic Chocolate Cake</h3>
+<p>A rich, soft chocolate cake with a smooth finish, created for celebrations, special moments, and those weekends when you simply feel like baking.</p>
+<div class="baking-content-details">
+<div>
+<strong>Prep</strong>
+<span>20 min</span>
+</div>
+<div>
+<strong>Bake</strong>
+<span>35 min</span>
+</div>
+<div>
+<strong>Level</strong>
+<span>Easy</span>
+</div>
+</div>
+<a href="recipes-tips.html" class="primary-button">Read the Recipe <i data-lucide="arrow-up-right"></i></a>
+</div>
+</div>
+<div class="baking-inspiration-footer reveal">
+<div class="baking-inspiration-topics">
+<span>01 Recipes</span>
+<span>02 Baking Tips</span>
+<span>03 Decorating Ideas</span>
+</div>
+<a href="recipes-tips.html" class="text-button">Explore Everything <i data-lucide="arrow-right"></i></a>
+</div>
+</div>
+</section>
+<section class="why-bakers-section section" id="why-bakers">
+<div class="container">
+<div class="why-bakers-layout">
+<div class="why-bakers-intro reveal">
+<span class="section-eyebrow"><i data-lucide="heart"></i> Why Bakers Corner</span>
+<h2 class="section-title">Everything You Need to <span>Bake With Confidence.</span></h2>
+<p>Whether you're making your first batch of cookies or creating a celebration cake, we bring together dependable products, useful guidance, and inspiration for every kind of baker.</p>
+<a href="products.html" class="primary-button">Discover Our Products <i data-lucide="arrow-right"></i></a>
+</div>
+<div class="why-bakers-values reveal">
+<div class="why-bakers-value">
+<div class="why-bakers-value-number">01</div>
+<div class="why-bakers-value-content">
+<h3>Quality First</h3>
+<p>Carefully selected baking essentials that you can rely on for everyday creations.</p>
+</div>
+<i data-lucide="arrow-up-right" class="why-bakers-value-icon"></i>
+</div>
+<div class="why-bakers-value">
+<div class="why-bakers-value-number">02</div>
+<div class="why-bakers-value-content">
+<h3>Made For Bakers</h3>
+<p>Products and ideas chosen with beginners, hobbyists, and passionate bakers in mind.</p>
+</div>
+<i data-lucide="arrow-up-right" class="why-bakers-value-icon"></i>
+</div>
+<div class="why-bakers-value">
+<div class="why-bakers-value-number">03</div>
+<div class="why-bakers-value-content">
+<h3>Helpful Inspiration</h3>
+<p>Practical recipes, tips, and decorating ideas to help you enjoy every step of baking.</p>
+</div>
+<i data-lucide="arrow-up-right" class="why-bakers-value-icon"></i>
+</div>
+</div>
+</div>
+<div class="why-bakers-stats reveal">
+<div class="why-bakers-stat">
+<strong>500<span>+</span></strong>
+<p>Baking Essentials</p>
+</div>
+<div class="why-bakers-stat">
+<strong>100<span>+</span></strong>
+<p>Recipes &amp; Tips</p>
+</div>
+<div class="why-bakers-stat">
+<strong>4.9<span>/5</span></strong>
+<p>Baker Rating</p>
+</div>
+<div class="why-bakers-stat">
+<strong>24<span>/7</span></strong>
+<p>Baking Inspiration</p>
+</div>
+</div>
+</div>
+</section>
+<section class="bakers-note-section section" id="bakers-note">
+<div class="container">
+<div class="bakers-note-inner reveal">
+<div class="bakers-note-heading">
+<span class="section-eyebrow"><i data-lucide="quote"></i> The baker's note</span>
+</div>
+<div class="bakers-note-quote">
+<span class="bakers-note-mark">“</span>
+<blockquote>Good baking isn't about perfection. It's about making something with care.</blockquote>
+<span class="bakers-note-mark bakers-note-mark--end">”</span>
+</div>
+<div class="bakers-note-author">
+<span></span>
+<p>Bakers Corner</p>
+<span></span>
+</div>
+<div class="bakers-note-categories">
+<a href="recipes-tips.html" class="bakers-note-category">
+<span>01</span>
+<strong>Beginner Friendly</strong>
+<i data-lucide="arrow-up-right"></i>
+</a>
+<a href="recipes-tips.html" class="bakers-note-category">
+<span>02</span>
+<strong>Weekend Bakes</strong>
+<i data-lucide="arrow-up-right"></i>
+</a>
+<a href="recipes-tips.html" class="bakers-note-category">
+<span>03</span>
+<strong>Celebration Bakes</strong>
+<i data-lucide="arrow-up-right"></i>
+</a>
+</div>
+<div class="bakers-note-action">
+<a href="recipes-tips.html" class="primary-button">Explore Recipes &amp; Tips <i data-lucide="arrow-right"></i></a>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================
+     TESTIMONIALS SECTION
+========================================= -->
+<section class="testimonials-section section" id="testimonials">
+    <div class="container">
+
+        <div class="testimonials-heading reveal">
+            <div class="section-heading">
+                <span class="section-eyebrow">
+                    <i data-lucide="message-circle"></i>
+                    Customer Stories
+                </span>
+
+                <h2>Loved by <span>Bakers Everywhere</span></h2>
+
+                <p>
+                    From first-time bakers to everyday creators, see why
+                    our baking essentials have become part of their kitchen routine.
+                </p>
+            </div>
+        </div>
+
+        <div class="testimonials-grid">
+
+            <!-- Testimonial 1 -->
+            <article class="testimonial-card reveal">
+                <div class="testimonial-top">
+                    <div class="testimonial-avatar">
+                        AR
+                    </div>
+
+                    <div class="testimonial-person">
+                        <h3>Ananya Reddy</h3>
+                        <span>Home Baker</span>
+                    </div>
+
+                    <i data-lucide="quote" class="testimonial-quote"></i>
+                </div>
+
+                <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                </div>
+
+                <p>
+                    “Everything I needed for my baking projects was easy to find.
+                    The quality of the bakeware has been excellent, and I’ve already
+                    ordered again!”
+                </p>
+            </article>
+
+            <!-- Testimonial 2 -->
+            <article class="testimonial-card reveal">
+                <div class="testimonial-top">
+                    <div class="testimonial-avatar">
+                        PS
+                    </div>
+
+                    <div class="testimonial-person">
+                        <h3>Priya Sharma</h3>
+                        <span>Baking Enthusiast</span>
+                    </div>
+
+                    <i data-lucide="quote" class="testimonial-quote"></i>
+                </div>
+
+                <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                </div>
+
+                <p>
+                    “Bakers Corner has made baking so much more enjoyable for me.
+                    The products are reliable, beautifully packed, and perfect
+                    for everyday baking.”
+                </p>
+            </article>
+
+            <!-- Testimonial 3 -->
+            <article class="testimonial-card reveal">
+                <div class="testimonial-top">
+                    <div class="testimonial-avatar">
+                        SK
+                    </div>
+
+                    <div class="testimonial-person">
+                        <h3>Sneha Kapoor</h3>
+                        <span>Cake Decorator</span>
+                    </div>
+
+                    <i data-lucide="quote" class="testimonial-quote"></i>
+                </div>
+
+                <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                </div>
+
+                <p>
+                    “The decorating supplies were exactly what I needed.
+                    The tools were simple to use and made decorating my
+                    birthday cake much easier.”
+                </p>
+            </article>
+
+            <!-- Testimonial 4 -->
+            <article class="testimonial-card reveal">
+                <div class="testimonial-top">
+                    <div class="testimonial-avatar">
+                        RM
+                    </div>
+
+                    <div class="testimonial-person">
+                        <h3>Rahul Mehta</h3>
+                        <span>Weekend Baker</span>
+                    </div>
+
+                    <i data-lucide="quote" class="testimonial-quote"></i>
+                </div>
+
+                <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                </div>
+
+                <p>
+                    “It feels like having a complete baking store right at
+                    my fingertips. I can find everything I need for my
+                    weekend baking projects in one place.”
+                </p>
+            </article>
+
+        </div>
+
+        <div class="testimonials-bottom reveal">
+            <span>
+                <i data-lucide="heart"></i>
+                Made for people who love to bake
+            </span>
+
+            <span>
+                <i data-lucide="users"></i>
+                A growing baking community
+            </span>
+        </div>
+
+    </div>
+</section>
+<section class="newsletter-section section" id="newsletter">
+<div class="container">
+<div class="newsletter-banner reveal">
+<div class="newsletter-image">
+<img src="./assets/images/index/freshly-baked-cookies.jpg" alt="Freshly baked cookies">
+<div class="newsletter-image-label">Made with care</div>
+</div>
+<div class="newsletter-content">
+<span class="section-eyebrow"><i data-lucide="mail"></i> Stay inspired</span>
+<h2>Fresh Ideas for Your <span>Next Bake.</span></h2>
+<p>Join our baking community for new recipes, helpful tips, creative decorating ideas, and updates from Bakers Corner.</p>
+<form class="newsletter-form" action="#" method="post">
+<label class="visually-hidden" for="newsletter-email">Email address</label>
+<div class="newsletter-input-wrap">
+<i class="bi bi-envelope"></i>
+<input type="email" id="newsletter-email" name="newsletter-email" placeholder="Enter your email address" autocomplete="email" required>
+</div>
+<button type="submit" class="primary-button">Join Our Newsletter <i data-lucide="arrow-right"></i></button>
+</form>
+<span class="newsletter-note"><i class="bi bi-shield-check"></i> No spam. Just things worth baking.</span>
+</div>
+</div>
+<div class="newsletter-bottom reveal">
+<span>Recipes</span>
+<span>Tips</span>
+<span>Decorating Ideas</span>
+<span>New Arrivals</span>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer" id="site-footer">
+<div class="container">
+<div class="footer-main">
+<div class="footer-brand">
+<a class="brand-logo" href="index.html" aria-label="Bakers Corner Home">
+    <div class="brand-logo-image">
+    <img src="assets/images/logo4.png" alt="Bakers Corner logo"></div>
+    <div class="brand-logo-text-wrapper">
+    <span class="brand-logo-bakers">Bakers</span><span class="brand-logo-corner">Corner</span>
+    </div>
+</a>
+<p class="footer-description">Bakers Corner brings together quality baking essentials, ingredients, decorating supplies and equipment for beginners, hobby bakers and passionate creators.</p>
+<div class="footer-social-links" aria-label="Social media links">
+<a class="social-link" href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+<a class="social-link" href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+<a class="social-link" href="#" aria-label="Pinterest"><i data-lucide="twitter"></i></a>
+<a class="social-link" href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+</div>
+</div>
+<div class="footer-column">
+<h2 class="footer-heading">Explore</h2>
+<ul class="footer-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="recipes-tips.html">Recipes &amp; Tips</a></li>
+<li><a href="bulk-orders.html">Bulk Orders</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="404.html">404 page</a></li>
+</ul>
+</div>
+<div class="footer-column">
+<h2 class="footer-heading">Baking</h2>
+<ul class="footer-links">
+<li><a href="products.html">Bakeware</a></li>
+<li><a href="products.html">Ingredients</a></li>
+<li><a href="products.html">Decorating Supplies</a></li>
+<li><a href="products.html">Ovens &amp; Equipment</a></li>
+<li><a href="recipes-tips.html">Recipes &amp; Tips</a></li>
+<li><a href="coming-soon.html">Coming Soon</a></li>
+</ul>
+</div>
+
+<div class="footer-column">
+<h2 class="footer-heading">Get In Touch</h2>
+<ul class="footer-contact-list">
+<li><i class="bi bi-envelope"></i><a href="mailto:hello@bakerscorner.com">hello@bakerscorner.com</a></li>
+<li><i class="bi bi-telephone"></i><a href="tel:+910000000000">+91 00000 00000</a></li>
+<li><i class="bi bi-geo-alt"></i><span>Bakers Corner<br>India</span><li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p class="copyright-text">&copy; 2026 Bakers Corner. All rights reserved.</p>
+<div class="footer-legal-links">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms &amp; Conditions</a>
+<a href="#">FAQs</a>
+</div>
+</div>
+</div>
+</footer>
+<button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+<i data-lucide="arrow-up"></i>
+</button>
+<script src="assets/js/main.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="assets/js/common.js"></script>
+<!-- <script src="https://unpkg.com/lucide@0.542.0/dist/umd/lucide.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        lucide.createIcons();
+      });
+    </script> -->
+<script src="https://unpkg.com/lucide@0.542.0/dist/umd/lucide.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        lucide.createIcons();
+      });
+    </script>
+</body>
+</body>
+</html>
