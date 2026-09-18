@@ -365,7 +365,7 @@
 </div>
 </div>
 </section> -->
-<section class="product-filters">
+<!-- <section class="product-filters">
 <div class="container">
 <div class="product-filters__list">
 <button class="product-filter active" type="button" data-category="all">All Products</button>
@@ -375,7 +375,740 @@
 <button class="product-filter" type="button" data-category="equipment">Ovens &amp; Equipment</button>
 </div>
 </div>
-</section>
+</section> -->
+
+
+<!-- <section class="products-catalog" id="products">
+    <div class="products-container">
+
+        <aside class="products-sidebar" id="productsSidebar">
+
+            <div class="products-sidebar-header">
+                <div>
+                    <span class="products-sidebar-label">SHOP COLLECTION</span>
+                    <h2>Filter Products</h2>
+                </div>
+
+                <button class="sidebar-close" id="sidebarClose" aria-label="Close filters">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+
+            <div class="filter-group">
+                <div class="filter-group-title">
+                    <h3>Categories</h3>
+                </div>
+
+                <label class="filter-option">
+                    <input type="radio" name="category" value="all" checked>
+                    <span class="custom-radio"></span>
+                    <span class="filter-name">All Products</span>
+                    <span class="filter-count">16</span>
+                </label>
+
+                <label class="filter-option">
+                    <input type="radio" name="category" value="bakeware">
+                    <span class="custom-radio"></span>
+                    <span class="filter-name">Bakeware</span>
+                    <span class="filter-count">4</span>
+                </label>
+
+                <label class="filter-option">
+                    <input type="radio" name="category" value="ingredients">
+                    <span class="custom-radio"></span>
+                    <span class="filter-name">Ingredients</span>
+                    <span class="filter-count">4</span>
+                </label>
+
+                <label class="filter-option">
+                    <input type="radio" name="category" value="decorating">
+                    <span class="custom-radio"></span>
+                    <span class="filter-name">Decorating Supplies</span>
+                    <span class="filter-count">4</span>
+                </label>
+
+                <label class="filter-option">
+                    <input type="radio" name="category" value="equipment">
+                    <span class="custom-radio"></span>
+                    <span class="filter-name">Appliances & Machinery</span>
+                    <span class="filter-count">4</span>
+                </label>
+            </div>
+
+            <div class="filter-group">
+                <div class="filter-group-title">
+                    <h3>Price Range</h3>
+                </div>
+
+                <div class="price-values">
+                    <span id="minPriceText">₹0</span>
+                    <span id="maxPriceText">₹12,000</span>
+                </div>
+
+                <div class="range-wrapper">
+                    <input type="range" id="minPrice" min="0" max="12000" value="0" step="100">
+                    <input type="range" id="maxPrice" min="0" max="12000" value="12000" step="100">
+                </div>
+
+                <div class="price-inputs">
+                    <div>
+                        <span>₹</span>
+                        <input type="number" id="minPriceInput" value="0" min="0" max="12000">
+                    </div>
+
+                    <span class="price-dash">—</span>
+
+                    <div>
+                        <span>₹</span>
+                        <input type="number" id="maxPriceInput" value="12000" min="0" max="12000">
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <div class="filter-group-title">
+                    <h3>Availability</h3>
+                </div>
+
+                <label class="filter-option filter-check">
+                    <input type="checkbox" id="stockFilter">
+                    <span class="custom-checkbox">
+                        <i data-lucide="check"></i>
+                    </span>
+                    <span class="filter-name">In Stock</span>
+                </label>
+
+                <label class="filter-option filter-check">
+                    <input type="checkbox" id="featuredFilter">
+                    <span class="custom-checkbox">
+                        <i data-lucide="check"></i>
+                    </span>
+                    <span class="filter-name">Featured Products</span>
+                </label>
+            </div>
+
+            <button class="clear-filters" id="clearFilters">
+                <i data-lucide="rotate-ccw"></i>
+                Clear All Filters
+            </button>
+
+        </aside>
+
+        <main class="products-main">
+
+            <div class="products-mobile-toolbar">
+                <button class="mobile-filter-btn" id="openSidebar">
+                    <i data-lucide="sliders-horizontal"></i>
+                    Filters
+                </button>
+
+                <span id="mobileProductsCount">16 Products</span>
+            </div>
+
+            <div class="products-topbar">
+
+                <div class="products-search">
+                    <i data-lucide="search"></i>
+
+                    <input
+                        type="search"
+                        id="productSearch"
+                        placeholder="Search products, ingredients, equipment..."
+                    >
+
+                    <button id="clearSearch" aria-label="Clear search">
+                        <i data-lucide="x"></i>
+                    </button>
+                </div>
+
+                <div class="products-toolbar-bottom">
+
+                    <div class="products-count">
+                        <strong id="productsCount">16</strong>
+                        <span>products available</span>
+                    </div>
+
+                    <div class="products-sort">
+                        <span>Sort by</span>
+
+                        <div class="sort-select">
+                            <select id="sortProducts">
+                                <option value="featured">Featured</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="name-a-z">Name: A to Z</option>
+                                <option value="name-z-a">Name: Z to A</option>
+                            </select>
+
+                            <i data-lucide="chevron-down"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+
+                <article class="product-card"
+                    data-category="bakeware"
+                    data-price="799"
+                    data-stock="true"
+                    data-featured="true"
+                    data-name="Non-Stick Muffin Tray">
+
+                    <div class="product-card-image">
+                        <img src="assets/images/products/muffin-tray.jpg" alt="Non-Stick Muffin Tray">
+
+                        <span class="product-badge">Bestseller</span>
+
+                        <button class="product-quick-view">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-card-content">
+                        <span class="product-category">BAKEWARE</span>
+
+                        <h3>Non-Stick Muffin Tray</h3>
+
+                        <p>12-cup heavy steel tray.</p>
+
+                        <div class="product-card-footer">
+                            <strong>₹799</strong>
+
+                            <a href="#" class="product-view-btn">
+                                View Product
+                                <i data-lucide="arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card"
+                    data-category="bakeware"
+                    data-price="649"
+                    data-stock="true"
+                    data-featured="false"
+                    data-name="Springform Cake Tin">
+
+                    <div class="product-card-image">
+                        <img src="assets/images/products/springform-cake-tin.jpg" alt="Springform Cake Tin">
+
+                        <button class="product-quick-view">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-card-content">
+                        <span class="product-category">BAKEWARE</span>
+
+                        <h3>Springform Cake Tin</h3>
+
+                        <p>8-inch leak-proof cheesecake pan.</p>
+
+                        <div class="product-card-footer">
+                            <strong>₹649</strong>
+
+                            <a href="#" class="product-view-btn">
+                                View Product
+                                <i data-lucide="arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card"
+                    data-category="bakeware"
+                    data-price="499"
+                    data-stock="true"
+                    data-featured="false"
+                    data-name="Classic Bread Loaf Pan">
+
+                    <div class="product-card-image">
+                        <img src="assets/images/products/bread-loaf-pan.jpg" alt="Classic Bread Loaf Pan">
+
+                        <button class="product-quick-view">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-card-content">
+                        <span class="product-category">BAKEWARE</span>
+
+                        <h3>Classic Bread Loaf Pan</h3>
+
+                        <p>Durable tin for quick breads & loaves.</p>
+
+                        <div class="product-card-footer">
+                            <strong>₹499</strong>
+
+                            <a href="#" class="product-view-btn">
+                                View Product
+                                <i data-lucide="arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card"
+                    data-category="bakeware"
+                    data-price="399"
+                    data-stock="true"
+                    data-featured="false"
+                    data-name="Non-Stick Silicone Mat">
+
+                    <div class="product-card-image">
+                        <img src="assets/images/products/silicone-mat.jpg" alt="Non-Stick Silicone Mat">
+
+                        <button class="product-quick-view">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-card-content">
+                        <span class="product-category">BAKEWARE</span>
+
+                        <h3>Non-Stick Silicone Mat</h3>
+
+                        <p>Reusable oven mat for macarons.</p>
+
+                        <div class="product-card-footer">
+                            <strong>₹399</strong>
+
+                            <a href="#" class="product-view-btn">
+                                View Product
+                                <i data-lucide="arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card"
+                    data-category="ingredients"
+                    data-price="199"
+                    data-stock="true"
+                    data-featured="true"
+                    data-name="Unbleached Bread Flour">
+
+                    <div class="product-card-image">
+                        <img src="assets/images/products/bread-flour.jpg" alt="Unbleached Bread Flour">
+
+                        <span class="product-badge">Popular</span>
+
+                        <button class="product-quick-view">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-card-content">
+                        <span class="product-category">INGREDIENTS</span>
+
+                        <h3>Unbleached Bread Flour (1kg)</h3>
+
+                        <p>High-protein flour for artisan bread.</p>
+
+                        <div class="product-card-footer">
+                            <strong>₹199</strong>
+
+                            <a href="#" class="product-view-btn">
+                                View Product
+                                <i data-lucide="arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card"
+                    data-category="ingredients"
+                    data-price="349"
+                    data-stock="true"
+                    data-featured="false"
+                    data-name="Dutch Cocoa Powder">
+
+                    <div class="product-card-image">
+                        <img src="assets/images/products/cocoa-powder.jpg" alt="Dutch Cocoa Powder">
+
+                        <button class="product-quick-view">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-card-content">
+                        <span class="product-category">INGREDIENTS</span>
+
+                        <h3>Dutch Cocoa Powder (250g)</h3>
+
+                        <p>Rich 22% cocoa butter chocolate base.</p>
+
+                        <div class="product-card-footer">
+                            <strong>₹349</strong>
+
+                            <a href="#" class="product-view-btn">
+                                View Product
+                                <i data-lucide="arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card"
+                    data-category="ingredients"
+                    data-price="799"
+                    data-stock="true"
+                    data-featured="true"
+                    data-name="Pure Vanilla Extract">
+
+                    <div class="product-card-image">
+                        <img src="assets/images/products/vanilla-extract.jpg" alt="Pure Vanilla Extract">
+
+                        <span class="product-badge">Premium</span>
+
+                        <button class="product-quick-view">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-card-content">
+                        <span class="product-category">INGREDIENTS</span>
+
+                        <h3>Pure Vanilla Extract (100ml)</h3>
+
+                        <p>Authentic Madagascar vanilla bean extract.</p>
+
+                        <div class="product-card-footer">
+                            <strong>₹799</strong>
+
+                            <a href="#" class="product-view-btn">
+                                View Product
+                                <i data-lucide="arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card"
+                    data-category="ingredients"
+                    data-price="280"
+                    data-stock="true"
+                    data-featured="false"
+                    data-name="Active Instant Yeast">
+
+                    <div class="product-card-image">
+                        <img src="assets/images/products/instant-yeast.jpg" alt="Active Instant Yeast">
+
+                        <button class="product-quick-view">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-card-content">
+                        <span class="product-category">INGREDIENTS</span>
+
+                        <h3>Active Instant Yeast (500g)</h3>
+
+                        <p>Fast-acting baker's dry yeast.</p>
+
+                        <div class="product-card-footer">
+                            <strong>₹280</strong>
+
+                            <a href="#" class="product-view-btn">
+                                View Product
+                                <i data-lucide="arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card"
+                    data-category="decorating"
+                    data-price="1299"
+                    data-stock="true"
+                    data-featured="true"
+                    data-name="Revolving Cake Turntable">
+
+                    <div class="product-card-image">
+                        <img src="assets/images/products/cake-turntable.jpg" alt="Revolving Cake Turntable">
+
+                        <span class="product-badge">Featured</span>
+
+                        <button class="product-quick-view">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-card-content">
+                        <span class="product-category">DECORATING</span>
+
+                        <h3>Revolving Cake Turntable</h3>
+
+                        <p>Smooth aluminum revolving stand.</p>
+
+                        <div class="product-card-footer">
+                            <strong>₹1,299</strong>
+
+                            <a href="#" class="product-view-btn">
+                                View Product
+                                <i data-lucide="arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card"
+                    data-category="decorating"
+                    data-price="899"
+                    data-stock="true"
+                    data-featured="false"
+                    data-name="Pro Piping Nozzle Set">
+
+                    <div class="product-card-image">
+                        <img src="assets/images/products/piping-nozzle-set.jpg" alt="Pro Piping Nozzle Set">
+
+                        <button class="product-quick-view">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-card-content">
+                        <span class="product-category">DECORATING</span>
+
+                        <h3>Pro Piping Nozzle Set (24 Pcs)</h3>
+
+                        <p>Stainless steel tips for buttercream flowers.</p>
+
+                        <div class="product-card-footer">
+                            <strong>₹899</strong>
+
+                            <a href="#" class="product-view-btn">
+                                View Product
+                                <i data-lucide="arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card"
+                    data-category="decorating"
+                    data-price="349"
+                    data-stock="true"
+                    data-featured="false"
+                    data-name="Offset Icing Spatula">
+
+                    <div class="product-card-image">
+                        <img src="assets/images/products/icing-spatula.jpg" alt="Offset Icing Spatula">
+
+                        <button class="product-quick-view">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-card-content">
+                        <span class="product-category">DECORATING</span>
+
+                        <h3>Offset Icing Spatula</h3>
+
+                        <p>Ergonomic flexible cake smoother.</p>
+
+                        <div class="product-card-footer">
+                            <strong>₹349</strong>
+
+                            <a href="#" class="product-view-btn">
+                                View Product
+                                <i data-lucide="arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card"
+                    data-category="decorating"
+                    data-price="750"
+                    data-stock="true"
+                    data-featured="true"
+                    data-name="Assorted Gel Colors">
+
+                    <div class="product-card-image">
+                        <img src="assets/images/products/gel-colors.jpg" alt="Assorted Gel Colors">
+
+                        <span class="product-badge">Popular</span>
+
+                        <button class="product-quick-view">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-card-content">
+                        <span class="product-category">DECORATING</span>
+
+                        <h3>Assorted Gel Colors (12 Pack)</h3>
+
+                        <p>Highly concentrated food dye gels.</p>
+
+                        <div class="product-card-footer">
+                            <strong>₹750</strong>
+
+                            <a href="#" class="product-view-btn">
+                                View Product
+                                <i data-lucide="arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card"
+                    data-category="equipment"
+                    data-price="11999"
+                    data-stock="true"
+                    data-featured="true"
+                    data-name="Stand Mixer">
+
+                    <div class="product-card-image">
+                        <img src="assets/images/products/stand-mixer.jpg" alt="Stand Mixer 1000W">
+
+                        <span class="product-badge">Featured</span>
+
+                        <button class="product-quick-view">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-card-content">
+                        <span class="product-category">EQUIPMENT</span>
+
+                        <h3>Stand Mixer 1000W</h3>
+
+                        <p>5L stainless bowl with whisk & dough hook.</p>
+
+                        <div class="product-card-footer">
+                            <strong>₹11,999</strong>
+
+                            <a href="#" class="product-view-btn">
+                                View Product
+                                <i data-lucide="arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card"
+                    data-category="equipment"
+                    data-price="8499"
+                    data-stock="true"
+                    data-featured="false"
+                    data-name="Electric Convection Oven">
+
+                    <div class="product-card-image">
+                        <img src="assets/images/products/convection-oven.jpg" alt="Electric Convection Oven 30L">
+
+                        <button class="product-quick-view">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-card-content">
+                        <span class="product-category">EQUIPMENT</span>
+
+                        <h3>Electric Convection Oven 30L</h3>
+
+                        <p>Multi-function electric countertop oven.</p>
+
+                        <div class="product-card-footer">
+                            <strong>₹8,499</strong>
+
+                            <a href="#" class="product-view-btn">
+                                View Product
+                                <i data-lucide="arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card"
+                    data-category="equipment"
+                    data-price="899"
+                    data-stock="true"
+                    data-featured="false"
+                    data-name="Precision Digital Scale">
+
+                    <div class="product-card-image">
+                        <img src="assets/images/products/digital-scale.jpg" alt="Precision Digital Scale">
+
+                        <button class="product-quick-view">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-card-content">
+                        <span class="product-category">EQUIPMENT</span>
+
+                        <h3>Precision Digital Scale</h3>
+
+                        <p>0.1g accuracy kitchen measurement scale.</p>
+
+                        <div class="product-card-footer">
+                            <strong>₹899</strong>
+
+                            <a href="#" class="product-view-btn">
+                                View Product
+                                <i data-lucide="arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card"
+                    data-category="equipment"
+                    data-price="1799"
+                    data-stock="true"
+                    data-featured="false"
+                    data-name="5-Speed Hand Whisk Mixer">
+
+                    <div class="product-card-image">
+                        <img src="assets/images/products/hand-whisk-mixer.jpg" alt="5-Speed Hand Whisk Mixer">
+
+                        <button class="product-quick-view">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-card-content">
+                        <span class="product-category">EQUIPMENT</span>
+
+                        <h3>5-Speed Hand Whisk Mixer</h3>
+
+                        <p>Compact 300W motor with turbo boost.</p>
+
+                        <div class="product-card-footer">
+                            <strong>₹1,799</strong>
+
+                            <a href="#" class="product-view-btn">
+                                View Product
+                                <i data-lucide="arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="products-empty" id="productsEmpty">
+                <div class="products-empty-icon">
+                    <i data-lucide="search-x"></i>
+                </div>
+
+                <h3>No Products Found</h3>
+                <p>Try changing your search or filter options.</p>
+
+                <button id="emptyClearFilters">Clear Filters</button>
+            </div>
+
+        </main>
+    </div>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+</section> -->
+
+
 <section class="products-catalog" id="products">
 <section class="product-category-section">
 <div class="container">
@@ -730,7 +1463,304 @@
       document.addEventListener("DOMContentLoaded", () => {
         lucide.createIcons();
       });
+
+      document.addEventListener("DOMContentLoaded", () => {
+
+    if (typeof lucide !== "undefined") {
+        lucide.createIcons();
+    }
+
+    const productsGrid = document.getElementById("productsGrid");
+    const productCards = Array.from(document.querySelectorAll(".product-card"));
+
+    const searchInput = document.getElementById("productSearch");
+    const clearSearch = document.getElementById("clearSearch");
+
+    const categoryInputs = document.querySelectorAll('input[name="category"]');
+
+    const minPrice = document.getElementById("minPrice");
+    const maxPrice = document.getElementById("maxPrice");
+
+    const minPriceInput = document.getElementById("minPriceInput");
+    const maxPriceInput = document.getElementById("maxPriceInput");
+
+    const minPriceText = document.getElementById("minPriceText");
+    const maxPriceText = document.getElementById("maxPriceText");
+
+    const stockFilter = document.getElementById("stockFilter");
+    const featuredFilter = document.getElementById("featuredFilter");
+
+    const sortProducts = document.getElementById("sortProducts");
+
+    const productsCount = document.getElementById("productsCount");
+    const mobileProductsCount = document.getElementById("mobileProductsCount");
+
+    const clearFilters = document.getElementById("clearFilters");
+    const emptyClearFilters = document.getElementById("emptyClearFilters");
+
+    const productsEmpty = document.getElementById("productsEmpty");
+
+    const sidebar = document.getElementById("productsSidebar");
+    const sidebarOverlay = document.getElementById("sidebarOverlay");
+    const openSidebar = document.getElementById("openSidebar");
+    const sidebarClose = document.getElementById("sidebarClose");
+
+    function formatPrice(value) {
+        return Number(value).toLocaleString("en-IN");
+    }
+
+    function updatePriceDisplay() {
+        let min = Number(minPrice.value);
+        let max = Number(maxPrice.value);
+
+        if (min > max - 100) {
+            min = max - 100;
+            minPrice.value = min;
+        }
+
+        if (max < min + 100) {
+            max = min + 100;
+            maxPrice.value = max;
+        }
+
+        minPriceInput.value = min;
+        maxPriceInput.value = max;
+
+        minPriceText.textContent = `₹${formatPrice(min)}`;
+        maxPriceText.textContent = `₹${formatPrice(max)}`;
+    }
+
+    function syncPriceInputs() {
+        let min = Number(minPriceInput.value) || 0;
+        let max = Number(maxPriceInput.value) || 12000;
+
+        min = Math.max(0, Math.min(min, 12000));
+        max = Math.max(0, Math.min(max, 12000));
+
+        if (min > max - 100) {
+            min = max - 100;
+
+            if (min < 0) {
+                min = 0;
+                max = 100;
+            }
+        }
+
+        minPrice.value = min;
+        maxPrice.value = max;
+
+        updatePriceDisplay();
+        filterProducts();
+    }
+
+    function getSelectedCategory() {
+        const selected = document.querySelector('input[name="category"]:checked');
+        return selected ? selected.value : "all";
+    }
+
+    function filterProducts() {
+
+        const category = getSelectedCategory();
+        const searchTerm = searchInput.value.trim().toLowerCase();
+
+        const min = Number(minPrice.value);
+        const max = Number(maxPrice.value);
+
+        const onlyStock = stockFilter.checked;
+        const onlyFeatured = featuredFilter.checked;
+
+        let visibleProducts = [];
+
+        productCards.forEach(card => {
+
+            const cardCategory = card.dataset.category;
+            const cardPrice = Number(card.dataset.price);
+            const cardStock = card.dataset.stock === "true";
+            const cardFeatured = card.dataset.featured === "true";
+            const cardName = card.dataset.name.toLowerCase();
+            const cardText = card.textContent.toLowerCase();
+
+            const matchesCategory =
+                category === "all" || cardCategory === category;
+
+            const matchesPrice =
+                cardPrice >= min && cardPrice <= max;
+
+            const matchesSearch =
+                !searchTerm ||
+                cardName.includes(searchTerm) ||
+                cardText.includes(searchTerm);
+
+            const matchesStock =
+                !onlyStock || cardStock;
+
+            const matchesFeatured =
+                !onlyFeatured || cardFeatured;
+
+            const shouldShow =
+                matchesCategory &&
+                matchesPrice &&
+                matchesSearch &&
+                matchesStock &&
+                matchesFeatured;
+
+            if (shouldShow) {
+                card.style.display = "";
+                visibleProducts.push(card);
+            } else {
+                card.style.display = "none";
+            }
+        });
+
+        sortVisibleProducts(visibleProducts);
+
+        productsCount.textContent = visibleProducts.length;
+        mobileProductsCount.textContent =
+            `${visibleProducts.length} ${visibleProducts.length === 1 ? "Product" : "Products"}`;
+
+        if (visibleProducts.length === 0) {
+            productsEmpty.classList.add("show");
+            productsGrid.style.display = "none";
+        } else {
+            productsEmpty.classList.remove("show");
+            productsGrid.style.display = "grid";
+        }
+    }
+
+    function sortVisibleProducts(cards) {
+
+        const sortValue = sortProducts.value;
+
+        cards.sort((a, b) => {
+
+            const priceA = Number(a.dataset.price);
+            const priceB = Number(b.dataset.price);
+
+            const nameA = a.dataset.name.toLowerCase();
+            const nameB = b.dataset.name.toLowerCase();
+
+            const featuredA = a.dataset.featured === "true";
+            const featuredB = b.dataset.featured === "true";
+
+            if (sortValue === "price-low") {
+                return priceA - priceB;
+            }
+
+            if (sortValue === "price-high") {
+                return priceB - priceA;
+            }
+
+            if (sortValue === "name-a-z") {
+                return nameA.localeCompare(nameB);
+            }
+
+            if (sortValue === "name-z-a") {
+                return nameB.localeCompare(nameA);
+            }
+
+            if (sortValue === "featured") {
+                return Number(featuredB) - Number(featuredA);
+            }
+
+            return 0;
+        });
+
+        cards.forEach(card => {
+            productsGrid.appendChild(card);
+        });
+    }
+
+    function resetFilters() {
+
+        document.querySelector('input[name="category"][value="all"]').checked = true;
+
+        minPrice.value = 0;
+        maxPrice.value = 12000;
+
+        minPriceInput.value = 0;
+        maxPriceInput.value = 12000;
+
+        stockFilter.checked = false;
+        featuredFilter.checked = false;
+
+        searchInput.value = "";
+        clearSearch.style.display = "none";
+
+        sortProducts.value = "featured";
+
+        updatePriceDisplay();
+        filterProducts();
+    }
+
+    searchInput.addEventListener("input", () => {
+
+        clearSearch.style.display =
+            searchInput.value.length > 0 ? "flex" : "none";
+
+        filterProducts();
+    });
+
+    clearSearch.addEventListener("click", () => {
+
+        searchInput.value = "";
+        clearSearch.style.display = "none";
+
+        filterProducts();
+        searchInput.focus();
+    });
+
+    categoryInputs.forEach(input => {
+        input.addEventListener("change", filterProducts);
+    });
+
+    minPrice.addEventListener("input", () => {
+        updatePriceDisplay();
+        filterProducts();
+    });
+
+    maxPrice.addEventListener("input", () => {
+        updatePriceDisplay();
+        filterProducts();
+    });
+
+    minPriceInput.addEventListener("change", syncPriceInputs);
+    maxPriceInput.addEventListener("change", syncPriceInputs);
+
+    stockFilter.addEventListener("change", filterProducts);
+    featuredFilter.addEventListener("change", filterProducts);
+
+    sortProducts.addEventListener("change", filterProducts);
+
+    clearFilters.addEventListener("click", resetFilters);
+    emptyClearFilters.addEventListener("click", resetFilters);
+
+    openSidebar.addEventListener("click", () => {
+        sidebar.classList.add("active");
+        sidebarOverlay.classList.add("active");
+        document.body.style.overflow = "hidden";
+    });
+
+    function closeSidebar() {
+        sidebar.classList.remove("active");
+        sidebarOverlay.classList.remove("active");
+        document.body.style.overflow = "";
+    }
+
+    sidebarClose.addEventListener("click", closeSidebar);
+    sidebarOverlay.addEventListener("click", closeSidebar);
+
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 900) {
+            closeSidebar();
+        }
+    });
+
+    updatePriceDisplay();
+    filterProducts();
+
+});
     </script>
-</body>
+
+    
 </body>
 </html>

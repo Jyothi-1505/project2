@@ -2165,15 +2165,24 @@ body {
         max-width: 600px;
     }
 
+    .footer-social-links {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
     /* Get In Touch */
     .footer-column:last-child {
         width: 100%;
         max-width: 100%;
-        text-align: left;
+        text-align: center;
     }
 
     .footer-column:last-child .footer-heading {
-        text-align: left;
+        text-align: center;
         margin-bottom: 1rem;
     }
 
@@ -3433,10 +3442,10 @@ body {
 
 /* =========================================================
    FOOTER - CENTER WITHOUT CHANGING CONTENT ORDER
-   768px and below
+   1024px and below (including 960px Surface Pro & 768px Tablet)
 ========================================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
     /* Keep the original footer structure */
     .site-footer {
@@ -3494,7 +3503,9 @@ body {
         text-align: center !important;
     }
 
-    .site-footer .footer-social {
+    .site-footer .footer-social,
+    .site-footer .footer-social-links,
+    .footer-social-links {
         width: 100% !important;
 
         display: flex !important;
@@ -3624,10 +3635,13 @@ body {
    FOOTER SOCIAL ICONS - FORCE CENTER
 ========================================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
     .site-footer .footer-brand .footer-social,
-    .site-footer .footer-social {
+    .site-footer .footer-social,
+    .site-footer .footer-brand .footer-social-links,
+    .site-footer .footer-social-links,
+    .footer-social-links {
         width: 100% !important;
         max-width: 100% !important;
 
@@ -3646,7 +3660,9 @@ body {
         text-align: center !important;
     }
 
-    .site-footer .footer-social a {
+    .site-footer .footer-social a,
+    .site-footer .footer-social-links .social-link,
+    .footer-social-links .social-link {
         display: inline-flex !important;
 
         justify-content: center !important;

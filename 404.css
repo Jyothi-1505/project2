@@ -1,0 +1,506 @@
+/* =========================================================
+   BAKERS CORNER - 404 PAGE
+========================================================= */
+
+.error-page {
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px 20px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    background: var(--color-background);
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.error-card {
+
+    position: relative;
+
+    width: 100%;
+    max-width: 900px;
+
+    min-height: 620px;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+
+    border-radius: 18px;
+
+    box-shadow: var(--shadow-medium);
+}
+
+
+/* =========================================================
+   CARD HEADER
+========================================================= */
+
+.error-card-header {
+
+    width: 100%;
+    min-height: 72px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 25px;
+
+    box-sizing: border-box;
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.error-brand {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: var(--color-secondary);
+
+    text-decoration: none;
+
+    white-space: nowrap;
+}
+
+.error-brand-icon {
+
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--color-primary);
+
+    border-radius: 50%;
+
+    color: var(--color-primary);
+}
+
+.error-brand-icon svg {
+
+    width: 19px;
+    height: 19px;
+}
+
+.error-brand-name {
+
+    color: var(--color-secondary);
+
+    font-size: .9rem;
+
+    font-weight: 600;
+
+    letter-spacing: -.03em;
+}
+
+.error-brand-name span {
+
+    color: var(--color-primary);
+}
+
+
+/* =========================================================
+   CONTROLS
+========================================================= */
+
+.error-controls {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.error-control-button {
+
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--color-border);
+
+    border-radius: 50%;
+
+    background: transparent;
+
+    color: var(--color-secondary);
+
+    font-size: .45rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all .25s ease;
+}
+
+.error-control-button:hover {
+
+    color: var(--color-primary);
+
+    border-color: var(--color-primary);
+
+    transform: translateY(-2px);
+}
+
+.error-control-button svg {
+
+    width: 14px;
+    height: 14px;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.error-content {
+
+    position: relative;
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 45px 30px;
+}
+
+
+/* =========================================================
+   404 NUMBER
+========================================================= */
+
+.error-number {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-bottom: 22px;
+
+    color: var(--color-secondary);
+
+    font-size: clamp(6rem, 14vw, 9rem);
+
+    font-weight: 600;
+
+    line-height: .75;
+
+    letter-spacing: -.08em;
+}
+
+
+/* =========================================================
+   COOKIE
+========================================================= */
+
+.error-cookie {
+
+    width: 90px;
+    height: 90px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--color-primary);
+
+    color: #fff;
+
+    transform: rotate(-8deg);
+}
+
+.error-cookie svg {
+
+    width: 45px;
+    height: 45px;
+
+    stroke-width: 1.5;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.error-eyebrow {
+
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: var(--color-primary);
+
+    font-size: .48rem;
+
+    font-weight: 600;
+
+    letter-spacing: .17em;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.error-content h1 {
+
+    max-width: 650px;
+
+    margin: 0 auto 18px;
+
+    color: var(--color-secondary);
+
+    font-size: clamp(2.5rem, 5vw, 4.2rem);
+
+    font-weight: 500;
+
+    line-height: .95;
+
+    letter-spacing: -.055em;
+}
+
+.error-content h1 em {
+
+    color: var(--color-primary);
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-weight: 400;
+
+    font-style: italic;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.error-content > p {
+
+    width: 100%;
+    max-width: 500px;
+
+    margin: 0 auto 27px;
+
+    color: var(--color-text);
+
+    font-size: 16px;
+
+    font-weight: 400;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.error-actions {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+.error-primary-button,
+.error-secondary-button {
+
+    min-height: 44px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 0 20px;
+
+    border-radius: 25px;
+
+    font-size: .48rem;
+
+    font-weight: 600;
+
+    letter-spacing: .1em;
+
+    text-decoration: none;
+
+    transition: all .25s ease;
+}
+
+.error-primary-button {
+
+    background: var(--color-primary);
+
+    border: 1px solid var(--color-primary);
+
+    color: #fff;
+}
+
+.error-primary-button:hover {
+
+    background: var(--color-secondary);
+
+    border-color: var(--color-secondary);
+
+    color: #fff;
+
+    transform: translateY(-2px);
+}
+
+.error-secondary-button {
+
+    background: transparent;
+
+    border: 1px solid var(--color-border);
+
+    color: var(--color-secondary);
+}
+
+.error-secondary-button:hover {
+
+    color: var(--color-primary);
+
+    border-color: var(--color-primary);
+
+    transform: translateY(-2px);
+}
+
+.error-primary-button svg,
+.error-secondary-button svg {
+
+    width: 13px;
+    height: 13px;
+}
+
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.error-bottom {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 45px;
+}
+
+.error-bottom span {
+
+    width: 35px;
+
+    height: 1px;
+
+    background: var(--color-primary);
+
+    opacity: .6;
+}
+
+.error-bottom p {
+
+    margin: 0;
+
+    color: var(--color-text);
+
+    font-size: .4rem;
+
+    font-weight: 600;
+
+    letter-spacing: .13em;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+[dir="rtl"] .error-card-header {
+
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .error-actions {
+
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .error-number {
+
+    flex-direction: row-reverse;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+.dark-mode .error-card {
+
+    box-shadow: var(--shadow-medium);
+}

@@ -856,7 +856,7 @@ display:inline-flex;
 margin-left:.45rem;
 }
 }
-@media (max-width:767.98px){
+@media (max-width:768px){
 .header-wrapper{
 column-gap:.5rem;
 }
@@ -1024,7 +1024,52 @@ border-left:0;
 border-right:2px solid var(--color-primary);
 }
 }
-@media (max-width:767.98px){
+@media (max-width: 1024px){
+.site-footer .footer-brand{
+text-align:center;
+margin:0 auto;
+}
+.site-footer .brand-logo{
+justify-content:center;
+margin:0 auto;
+}
+.site-footer .footer-description{
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+}
+.footer-social-links,
+.site-footer .footer-social-links{
+display:flex !important;
+justify-content:center !important;
+align-items:center !important;
+width:100% !important;
+margin-left:auto !important;
+margin-right:auto !important;
+}
+.site-footer .footer-column{
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+}
+.site-footer .footer-heading{
+text-align:center;
+}
+.site-footer .footer-links{
+align-items:center;
+text-align:center;
+}
+.site-footer .footer-contact-list{
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+.site-footer .footer-contact-list li{
+justify-content:center;
+text-align:center;
+}
+}
+@media (max-width:768px){
 body{
 font-size:.95rem;
 }
@@ -1038,6 +1083,15 @@ gap:2.25rem;
 }
 .footer-brand{
 grid-column:auto;
+}
+.footer-social-links,
+.site-footer .footer-social-links{
+display:flex !important;
+justify-content:center !important;
+align-items:center !important;
+width:100% !important;
+margin-left:auto !important;
+margin-right:auto !important;
 }
 .footer-bottom{
 flex-direction:column;
@@ -1070,6 +1124,15 @@ width:135px;
 .site-footer{
 padding-top:3.5rem;
 }
+.footer-social-links,
+.site-footer .footer-social-links{
+display:flex !important;
+justify-content:center !important;
+align-items:center !important;
+width:100% !important;
+margin-left:auto !important;
+margin-right:auto !important;
+}
 .footer-bottom{
 padding:1.25rem 0;
 }
@@ -1098,7 +1161,7 @@ opacity:1;
 transform:none;
 }
 }
-@media (max-width:767.98px){
+@media (max-width:768px){
 .section{
 padding:4.5rem 0;
 }
